@@ -1,0 +1,2 @@
+#! /bin/bash 
+ ninja -C /home/abhay/project/wallengine/build/ && /home/abhay/project/wallengine/build/wallengine

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/abhay/project/wallengine/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

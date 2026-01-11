@@ -1,0 +1,3 @@
+/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir
+/home/abhay/project/wallengine/build/CMakeFiles/edit_cache.dir
+/home/abhay/project/wallengine/build/CMakeFiles/rebuild_cache.dir

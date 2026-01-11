@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/main.cpp.o -c /home/abhay/project/wallengine/main.cpp",
+  "file": "/home/abhay/project/wallengine/main.cpp",
+  "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/main.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -g -o CMakeFiles/wallengine.dir/xdg-shell-protocol.c.o -c /home/abhay/project/wallengine/build/xdg-shell-protocol.c",
+  "file": "/home/abhay/project/wallengine/build/xdg-shell-protocol.c",
+  "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/xdg-shell-protocol.c.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -g -o CMakeFiles/wallengine.dir/wlr-layer-shell-unstable-v1-protocol.c.o -c /home/abhay/project/wallengine/build/wlr-layer-shell-unstable-v1-protocol.c",
+  "file": "/home/abhay/project/wallengine/build/wlr-layer-shell-unstable-v1-protocol.c",
+  "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/wlr-layer-shell-unstable-v1-protocol.c.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/src/texture.cpp.o -c /home/abhay/project/wallengine/src/texture.cpp",
+  "file": "/home/abhay/project/wallengine/src/texture.cpp",
+  "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/texture.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/src/stb.cpp.o -c /home/abhay/project/wallengine/src/stb.cpp",
+  "file": "/home/abhay/project/wallengine/src/stb.cpp",
+  "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/stb.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o -c /home/abhay/project/wallengine/src/waylandinterrupt.cpp",
+  "file": "/home/abhay/project/wallengine/src/waylandinterrupt.cpp",
+  "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o -c /home/abhay/project/wallengine/src/wayland-xdg/fi_keyboard_handler.cpp",
+  "file": "/home/abhay/project/wallengine/src/wayland-xdg/fi_keyboard_handler.cpp",
+  "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o"
+}
+]

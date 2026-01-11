@@ -1,0 +1,32 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : 
+	{
+		"src/CMakeFiles/SRC_lib.dir/texture.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/home/abhay/project/wallengine/src/texture.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/abhay/project/wallengine/build/src",
+	"dir-cur-src" : "/home/abhay/project/wallengine/src",
+	"dir-top-bld" : "/home/abhay/project/wallengine/build",
+	"dir-top-src" : "/home/abhay/project/wallengine",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/abhay/project/wallengine/build/src/CMakeFiles/SRC_lib.dir",
+	"sources" : {}
+}
