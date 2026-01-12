@@ -1,14 +1,17 @@
 
 //src
 
-#include "texture.hpp"
-#include "wayland-xdg/fi_keyboard_handler.hpp"
-#include "waylandinterrupt.hpp"
-#include "xdg-shell-client-protocol.h"
-#include "utils/smpointer.hpp"
+#include "wayland-xdg/eventqueue.hpp"
+#include <chrono>
+#include <texture.hpp>
+#include <wayland-xdg/fi_keyboard_handler.hpp>
+#include <waylandinterrupt.hpp>
+#include <xdg-shell-client-protocol.h>
+#include <utils/smpointer.hpp>
 #include <EGL/egl.h>
 #include <GLES3/gl32.h>
 #include <wayland-client-protocol.h>
+#include <wayland-xdg/fi_pointer_handler.hpp>
 using namespace std;
 
 // stb include
@@ -94,17 +97,18 @@ static const struct wl_pointer_listener pointer_listener ={
     
 };
 static  vector<unique_ptr<seatData>> vtseat;
-static fi_keyboard_handler keyb;
+static fi_keyboard_handler keyb(new fi_EventQueue());
+static fi_pointer_listener pointH;
 static void seat_handle_cap(void *data, struct wl_seat *curr_seat, uint32_t caps) {
     auto* curr_seat_info=static_cast<seatData *>(data);
     if((caps & WL_SEAT_CAPABILITY_KEYBOARD) && !curr_seat_info->keyboard){
         curr_seat_info->keyboard.reset(wl_seat_get_keyboard(curr_seat));
         keyb.setup(curr_seat_info->keyboard.get());   
     }
-    // if((caps & WL_SEAT_CAPABILITY_POINTER) && !curr_seat_info->pointer){
-    //    curr_seat_info->pointer=wl_seat_get_pointer(curr_seat);
-    //     wl_pointer_add_listener(curr_seat_info->pointer,&pointer_listener,curr_seat_info);
-    // }
+    if((caps & WL_SEAT_CAPABILITY_POINTER) && !curr_seat_info->pointer){
+       curr_seat_info->pointer.reset(wl_seat_get_pointer(curr_seat));
+       pointH.setup(curr_seat_info->pointer.get());
+     }
 
 }
 void set_seat_name(void *data, wl_seat *curr_seat, const char *name){
@@ -125,10 +129,10 @@ static void on_global(void* data, struct wl_registry* reg, uint32_t id, const ch
                 .global_id=id,
                 
             }));
+         
             currst->seat.reset((static_cast<wl_seat*>(wl_registry_bind(reg,id,&wl_seat_interface,ver))));
             wl_seat_add_listener(currst->seat.get(),&seat_listener,currst.get());
             vtseat.push_back(std::move(currst));
-            cout << "exit onglobal ";
       }
 }
 
@@ -155,7 +159,6 @@ int main() {
     EGLint attr[] = { EGL_RED_SIZE, 8, EGL_GREEN_SIZE, 8, EGL_BLUE_SIZE, 8, 
         EGL_RENDERABLE_TYPE, EGL_OPENGL_ES3_BIT, EGL_NONE };
         EGLConfig cfg; EGLint n;
-        // NOLINTNEXTLINE(cppcoreguidelines-pro-bounds-array-to-pointer-decay)
         eglChooseConfig(edpy, attr, &cfg, 1, &n);
         
         EGLint cattr[] = { EGL_CONTEXT_MAJOR_VERSION, 3,EGL_CONTEXT_MINOR_VERSION,2, EGL_NONE };
@@ -176,13 +179,14 @@ int main() {
         wl_surface_commit(surf);
         GLuint programId=attachshaderandgetprogram();
          
-
-    GLfloat verts[]={
+        
+ 
+     GLfloat verts[]={
         -1,-1,    -1,-1,   
          1,1,      1,1,
         -1,1,     -1,1,
          1,-1,     1,-1
-    };
+    };  
     GLuint indices[]={0,1,2,0,1,3};
     GLuint vbo,vao,ebo;
     glGenVertexArrays(1,&vao);
@@ -200,11 +204,12 @@ int main() {
     glEnableVertexAttribArray(1);
     glUnbindVertexArray();
     GLint time_loc=glGetUniformLocation(programId,"time");
+    GLuint pointerX_loc=glGetUniformLocation(programId, "programX");
+    GLuint pointerY_loc=glGetUniformLocation(programId, "programY");
     GLint txt1_loc=glGetUniformLocation(programId,"txt1");
     GLuint txt1Id=texture("/home/abhay/Pictures/wallpapersmpvpaper/wallpaper_20251228_171553.png");
     GLint txt2_loc=glGetUniformLocation(programId,"txt2");
     GLuint txt2Id=texture("/home/abhay/Pictures/wallpapersmpvpaper/wallpaper_20251222_205854.png");
-
 
     glBindVertexArray(vao);
     float time=0;
@@ -221,17 +226,17 @@ int main() {
    while (!exitflag_sig && wl_display_dispatch(disp) != -1) {
            
             time+=addition;
-             if(keyb.time==1){
-                time=0;
-                addition=0.01F;
-                keyb.time=0;
-             }
+             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+            
             glUniform1f(time_loc,time);
+            glUniform1f(pointerX_loc, pointH.x);
+            glUniform1f(pointerY_loc, pointH.y);
             glDrawElements(GL_TRIANGLE_STRIP,6,GL_UNSIGNED_INT,0);
             eglSwapBuffers(edpy, esur);
             if(time>2.1){
                addition=-0.01F;
             }
+           std::this_thread::sleep_for(std::chrono::milliseconds(200));
             if(time<=0){
                 addition=0.01F;
             }
@@ -239,8 +244,7 @@ int main() {
        
     }
 
-    // exit(0);
-    // Add to your cleanup section at the end of main:
+    
  
 
     eglDestroyContext(edpy, ctx);

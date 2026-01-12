@@ -40,5 +40,11 @@
   "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o -c /home/abhay/project/wallengine/src/wayland-xdg/fi_keyboard_handler.cpp",
   "file": "/home/abhay/project/wallengine/src/wayland-xdg/fi_keyboard_handler.cpp",
   "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o -c /home/abhay/project/wallengine/src/wayland-xdg/eventqueue.cpp",
+  "file": "/home/abhay/project/wallengine/src/wayland-xdg/eventqueue.cpp",
+  "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o"
 }
 ]

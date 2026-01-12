@@ -411,4 +411,3 @@ CheckOptions:
   readability-use-std-min-max.IncludeStyle: llvm
 SystemHeaders:   false
 ...
-

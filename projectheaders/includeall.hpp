@@ -2,6 +2,8 @@
 #define BASE_INCLUDE_H
 #include <iostream>
 #include <vector>
+#include <chrono>
+#include <thread>
 #include <fstream>
 #include <sstream>
 #include <queue>
@@ -20,7 +22,7 @@
 #include "xdg-shell-client-protocol.h"
 
 #define namespace protocol_namespace
-#include "wlr-layer-shell-unstable-v1-client-protocol.h"
+// #include "wlr-layer-shell-unstable-v1-client-protocol.h"
 #undef namespace
 #include "stb_image.h"
 

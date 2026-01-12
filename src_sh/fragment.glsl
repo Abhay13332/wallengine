@@ -5,6 +5,8 @@ in vec2 varytexpos;
 out vec4 FragColor;
 
 uniform float time;
+uniform int pointerX;
+uniform int pointerY;
 uniform sampler2D txt1;
 uniform sampler2D txt2;
 

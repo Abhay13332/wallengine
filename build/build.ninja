@@ -119,6 +119,16 @@ build CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o: CXX_C
   OBJECT_FILE_DIR = CMakeFiles/wallengine.dir/src/wayland-xdg
   TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
 
+build CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o: CXX_COMPILER__wallengine_unscanned_Debug /home/abhay/project/wallengine/src/wayland-xdg/eventqueue.cpp || cmake_object_order_depends_target_wallengine
+  CONFIG = Debug
+  DEFINES = -DWLR_USE_UNSTABLE
+  DEP_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.d
+  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders
+  OBJECT_DIR = CMakeFiles/wallengine.dir
+  OBJECT_FILE_DIR = CMakeFiles/wallengine.dir/src/wayland-xdg
+  TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target wallengine
@@ -127,7 +137,7 @@ build CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o: CXX_C
 #############################################
 # Link the executable wallengine
 
-build wallengine: CXX_EXECUTABLE_LINKER__wallengine_Debug CMakeFiles/wallengine.dir/main.cpp.o CMakeFiles/wallengine.dir/xdg-shell-protocol.c.o CMakeFiles/wallengine.dir/wlr-layer-shell-unstable-v1-protocol.c.o CMakeFiles/wallengine.dir/src/texture.cpp.o CMakeFiles/wallengine.dir/src/stb.cpp.o CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o
+build wallengine: CXX_EXECUTABLE_LINKER__wallengine_Debug CMakeFiles/wallengine.dir/main.cpp.o CMakeFiles/wallengine.dir/xdg-shell-protocol.c.o CMakeFiles/wallengine.dir/wlr-layer-shell-unstable-v1-protocol.c.o CMakeFiles/wallengine.dir/src/texture.cpp.o CMakeFiles/wallengine.dir/src/stb.cpp.o CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o
   CONFIG = Debug
   DEP_FILE = CMakeFiles/wallengine.dir/link.d
   FLAGS = -fsanitize=address -fno-omit-frame-pointer -g

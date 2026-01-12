@@ -120,7 +120,8 @@
 				5,
 				6,
 				7,
-				8
+				8,
+				9
 			]
 		},
 		{
@@ -307,7 +308,8 @@
 				5,
 				6,
 				7,
-				8
+				8,
+				9
 			]
 		},
 		{
@@ -322,10 +324,10 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		}
 	],
@@ -385,6 +387,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/wayland-xdg/fi_keyboard_handler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/wayland-xdg/eventqueue.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

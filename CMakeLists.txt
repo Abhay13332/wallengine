@@ -45,7 +45,7 @@ set(SRC_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/projectheaders")
 
 #include srcfiles
 set(SRC_FILES "src/texture.cpp" "src/stb.cpp" "src/waylandinterrupt.cpp"
-        "src/wayland-xdg/fi_keyboard_handler.cpp" )
+        "src/wayland-xdg/fi_keyboard_handler.cpp" "src/wayland-xdg/eventqueue.cpp" )
 # Add your executable
 add_executable(wallengine main.cpp  ${PROTOCOL_SOURCES} ${PROTOCOL_HEADERS} ${SRC_FILES})
 
