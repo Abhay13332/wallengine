@@ -4,19 +4,7 @@
 	"compiler-id" : "Clang",
 	"compiler-simulate-id" : "",
 	"config" : "Debug",
-	"cxx-modules" : 
-	{
-		"CMakeFiles/wallengine.dir/src/texture.cppm.o" : 
-		{
-			"bmi-only" : false,
-			"destination" : null,
-			"name" : "all_my_modules",
-			"relative-directory" : "src",
-			"source" : "/home/abhay/project/wallengine/src/texture.cppm",
-			"type" : "CXX_MODULES",
-			"visibility" : "PUBLIC"
-		}
-	},
+	"cxx-modules" : {},
 	"database-info" : null,
 	"dir-cur-bld" : "/home/abhay/project/wallengine/build",
 	"dir-cur-src" : "/home/abhay/project/wallengine",
@@ -30,10 +18,57 @@
 		"/usr/include/pixman-1",
 		"/usr/include/libdrm",
 		".",
-		"/home/abhay/project/wallengine/externalheaders/stb"
+		"/home/abhay/project/wallengine/externalheaders/stb",
+		"/home/abhay/project/wallengine/projectheaders",
+		"/usr/include/freetype2",
+		"/usr/include/libpng16",
+		"_deps/msdf-atlas-gen-src/msdfgen",
+		"_deps/msdf-atlas-gen-src"
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],
 	"module-dir" : "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir",
-	"sources" : {}
+	"sources" : 
+	{
+		"CMakeFiles/wallengine.dir/main.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/abhay/project/wallengine/main.cpp"
+		},
+		"CMakeFiles/wallengine.dir/src/glsl/font.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/abhay/project/wallengine/src/glsl/font.cpp"
+		},
+		"CMakeFiles/wallengine.dir/src/stb.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/abhay/project/wallengine/src/stb.cpp"
+		},
+		"CMakeFiles/wallengine.dir/src/texture.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/abhay/project/wallengine/src/texture.cpp"
+		},
+		"CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/abhay/project/wallengine/src/utils/setmap.cpp"
+		},
+		"CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/abhay/project/wallengine/src/wayland-xdg/eventqueue.cpp"
+		},
+		"CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/abhay/project/wallengine/src/wayland-xdg/fi_keyboard_handler.cpp"
+		},
+		"CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/abhay/project/wallengine/src/waylandinterrupt.cpp"
+		}
+	}
 }

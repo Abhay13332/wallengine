@@ -1,50 +1,344 @@
 [
 {
   "directory": "/home/abhay/project/wallengine/build",
-  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/main.cpp.o -c /home/abhay/project/wallengine/main.cpp",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src -g -std=gnu++26 @CMakeFiles/wallengine.dir/main.cpp.o.modmap -o CMakeFiles/wallengine.dir/main.cpp.o -c /home/abhay/project/wallengine/main.cpp",
   "file": "/home/abhay/project/wallengine/main.cpp",
   "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/main.cpp.o"
 },
 {
   "directory": "/home/abhay/project/wallengine/build",
-  "command": "/usr/bin/clang -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -g -o CMakeFiles/wallengine.dir/xdg-shell-protocol.c.o -c /home/abhay/project/wallengine/build/xdg-shell-protocol.c",
+  "command": "/usr/bin/clang -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src -g -o CMakeFiles/wallengine.dir/xdg-shell-protocol.c.o -c /home/abhay/project/wallengine/build/xdg-shell-protocol.c",
   "file": "/home/abhay/project/wallengine/build/xdg-shell-protocol.c",
   "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/xdg-shell-protocol.c.o"
 },
 {
   "directory": "/home/abhay/project/wallengine/build",
-  "command": "/usr/bin/clang -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -g -o CMakeFiles/wallengine.dir/wlr-layer-shell-unstable-v1-protocol.c.o -c /home/abhay/project/wallengine/build/wlr-layer-shell-unstable-v1-protocol.c",
+  "command": "/usr/bin/clang -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src -g -o CMakeFiles/wallengine.dir/wlr-layer-shell-unstable-v1-protocol.c.o -c /home/abhay/project/wallengine/build/wlr-layer-shell-unstable-v1-protocol.c",
   "file": "/home/abhay/project/wallengine/build/wlr-layer-shell-unstable-v1-protocol.c",
   "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/wlr-layer-shell-unstable-v1-protocol.c.o"
 },
 {
   "directory": "/home/abhay/project/wallengine/build",
-  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/src/texture.cpp.o -c /home/abhay/project/wallengine/src/texture.cpp",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src -g -std=gnu++26 @CMakeFiles/wallengine.dir/src/texture.cpp.o.modmap -o CMakeFiles/wallengine.dir/src/texture.cpp.o -c /home/abhay/project/wallengine/src/texture.cpp",
   "file": "/home/abhay/project/wallengine/src/texture.cpp",
   "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/texture.cpp.o"
 },
 {
   "directory": "/home/abhay/project/wallengine/build",
-  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/src/stb.cpp.o -c /home/abhay/project/wallengine/src/stb.cpp",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src -g -std=gnu++26 @CMakeFiles/wallengine.dir/src/stb.cpp.o.modmap -o CMakeFiles/wallengine.dir/src/stb.cpp.o -c /home/abhay/project/wallengine/src/stb.cpp",
   "file": "/home/abhay/project/wallengine/src/stb.cpp",
   "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/stb.cpp.o"
 },
 {
   "directory": "/home/abhay/project/wallengine/build",
-  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o -c /home/abhay/project/wallengine/src/waylandinterrupt.cpp",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src -g -std=gnu++26 @CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o.modmap -o CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o -c /home/abhay/project/wallengine/src/waylandinterrupt.cpp",
   "file": "/home/abhay/project/wallengine/src/waylandinterrupt.cpp",
   "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o"
 },
 {
   "directory": "/home/abhay/project/wallengine/build",
-  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o -c /home/abhay/project/wallengine/src/wayland-xdg/fi_keyboard_handler.cpp",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src -g -std=gnu++26 @CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o.modmap -o CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o -c /home/abhay/project/wallengine/src/wayland-xdg/fi_keyboard_handler.cpp",
   "file": "/home/abhay/project/wallengine/src/wayland-xdg/fi_keyboard_handler.cpp",
   "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o"
 },
 {
   "directory": "/home/abhay/project/wallengine/build",
-  "command": "/usr/bin/clang++ -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders  -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26 -o CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o -c /home/abhay/project/wallengine/src/wayland-xdg/eventqueue.cpp",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src -g -std=gnu++26 @CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.modmap -o CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o -c /home/abhay/project/wallengine/src/wayland-xdg/eventqueue.cpp",
   "file": "/home/abhay/project/wallengine/src/wayland-xdg/eventqueue.cpp",
   "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src -g -std=gnu++26 @CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.modmap -o CMakeFiles/wallengine.dir/src/glsl/font.cpp.o -c /home/abhay/project/wallengine/src/glsl/font.cpp",
+  "file": "/home/abhay/project/wallengine/src/glsl/font.cpp",
+  "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/glsl/font.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src -g -std=gnu++26 @CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o.modmap -o CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o -c /home/abhay/project/wallengine/src/utils/setmap.cpp",
+  "file": "/home/abhay/project/wallengine/src/utils/setmap.cpp",
+  "output": "/home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Charset.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Charset.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Charset.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Charset.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/FontGeometry.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/FontGeometry.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/FontGeometry.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/FontGeometry.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/GlyphGeometry.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/GlyphGeometry.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/GlyphGeometry.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/GlyphGeometry.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/GridAtlasPacker.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/GridAtlasPacker.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/GridAtlasPacker.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/GridAtlasPacker.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Padding.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Padding.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Padding.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Padding.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/RectanglePacker.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/RectanglePacker.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/RectanglePacker.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/RectanglePacker.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/TightAtlasPacker.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/TightAtlasPacker.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/TightAtlasPacker.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/TightAtlasPacker.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Workload.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Workload.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Workload.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Workload.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/artery-font-export.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/artery-font-export.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/artery-font-export.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/artery-font-export.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/bitmap-blit.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/bitmap-blit.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/bitmap-blit.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/bitmap-blit.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/charset-parser.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/charset-parser.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/charset-parser.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/charset-parser.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/csv-export.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/csv-export.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/csv-export.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/csv-export.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/glyph-generators.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/glyph-generators.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/glyph-generators.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/glyph-generators.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/image-encode.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/image-encode.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/image-encode.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/image-encode.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/json-export.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/json-export.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/json-export.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/json-export.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/main.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/main.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/main.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/main.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/shadron-preview-generator.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/shadron-preview-generator.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/shadron-preview-generator.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/shadron-preview-generator.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/size-selectors.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/size-selectors.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/size-selectors.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/size-selectors.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC=\"\" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -g -o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/utf8.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/utf8.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/utf8.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/utf8.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Contour.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Contour.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Contour.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Contour.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/DistanceMapping.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/DistanceMapping.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/DistanceMapping.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/DistanceMapping.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/EdgeHolder.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/EdgeHolder.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/EdgeHolder.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/EdgeHolder.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/MSDFErrorCorrection.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/MSDFErrorCorrection.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/MSDFErrorCorrection.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/MSDFErrorCorrection.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Projection.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Projection.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Projection.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Projection.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Scanline.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Scanline.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Scanline.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Scanline.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Shape.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Shape.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Shape.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Shape.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/contour-combiners.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/contour-combiners.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/contour-combiners.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/contour-combiners.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/convergent-curve-ordering.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/convergent-curve-ordering.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/convergent-curve-ordering.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/convergent-curve-ordering.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-coloring.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-coloring.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-coloring.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-coloring.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-segments.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-segments.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-segments.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-segments.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-selectors.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-selectors.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-selectors.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-selectors.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/equation-solver.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/equation-solver.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/equation-solver.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/equation-solver.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/export-svg.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/export-svg.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/export-svg.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/export-svg.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/msdf-error-correction.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/msdf-error-correction.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/msdf-error-correction.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/msdf-error-correction.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/msdfgen.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/msdfgen.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/msdfgen.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/msdfgen.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/rasterization.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/rasterization.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/rasterization.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/rasterization.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/render-sdf.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/render-sdf.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/render-sdf.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/render-sdf.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-bmp.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-bmp.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-bmp.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-bmp.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-fl32.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-fl32.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-fl32.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-fl32.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-rgba.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-rgba.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-rgba.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-rgba.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-tiff.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-tiff.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-tiff.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-tiff.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/sdf-error-estimation.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/sdf-error-estimation.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/sdf-error-estimation.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/sdf-error-estimation.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/shape-description.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/shape-description.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/shape-description.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/shape-description.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/include -isystem /usr/include/freetype2 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/import-font.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-font.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-font.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/import-font.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/include -isystem /usr/include/freetype2 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/import-svg.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-svg.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-svg.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/import-svg.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/include -isystem /usr/include/freetype2 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/resolve-shape-geometry.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/resolve-shape-geometry.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/resolve-shape-geometry.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/resolve-shape-geometry.cpp.o"
+},
+{
+  "directory": "/home/abhay/project/wallengine/build",
+  "command": "/usr/bin/clang++ -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXT_PUBLIC=\"\" -DMSDFGEN_PUBLIC=\"\" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/include -isystem /usr/include/freetype2 -g -o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/save-png.cpp.o -c /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/save-png.cpp",
+  "file": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/save-png.cpp",
+  "output": "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/save-png.cpp.o"
 }
 ]

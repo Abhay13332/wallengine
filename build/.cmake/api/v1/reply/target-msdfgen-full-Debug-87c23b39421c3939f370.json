@@ -1,0 +1,70 @@
+{
+	"abstract" : true,
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 204,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 206,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "msdfgen-full::@caa48cc13d340cc23d8e",
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "msdfgen-core::@caa48cc13d340cc23d8e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "msdfgen-ext::@caa48cc13d340cc23d8e"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "msdfgen-core::@caa48cc13d340cc23d8e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "msdfgen-ext::@caa48cc13d340cc23d8e"
+		}
+	],
+	"name" : "msdfgen-full",
+	"paths" : 
+	{
+		"build" : "_deps/msdf-atlas-gen-build/msdfgen",
+		"source" : "build/_deps/msdf-atlas-gen-src/msdfgen"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

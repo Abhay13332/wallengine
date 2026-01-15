@@ -1,5 +1,7 @@
 #ifndef BASE_INCLUDE_H
 #define BASE_INCLUDE_H
+#include <ft2build.h>
+#include FT_FREETYPE_H
 #include <iostream>
 #include <vector>
 #include <chrono>
@@ -22,7 +24,7 @@
 #include "xdg-shell-client-protocol.h"
 
 #define namespace protocol_namespace
-// #include "wlr-layer-shell-unstable-v1-client-protocol.h"
+#include "wlr-layer-shell-unstable-v1-client-protocol.h"
 #undef namespace
 #include "stb_image.h"
 

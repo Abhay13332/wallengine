@@ -47,87 +47,197 @@ cmake_ninja_workdir = /home/abhay/project/wallengine/build/
 #############################################
 # Order-only phony target for wallengine
 
-build cmake_object_order_depends_target_wallengine: phony || wlr-layer-shell-unstable-v1-client-protocol.h wlr-layer-shell-unstable-v1-protocol.c xdg-shell-client-protocol.h xdg-shell-protocol.c
+build cmake_object_order_depends_target_wallengine: phony || cmake_object_order_depends_target_msdf-atlas-gen cmake_object_order_depends_target_msdfgen-core cmake_object_order_depends_target_msdfgen-ext wlr-layer-shell-unstable-v1-client-protocol.h wlr-layer-shell-unstable-v1-protocol.c xdg-shell-client-protocol.h xdg-shell-protocol.c
 
-build CMakeFiles/wallengine.dir/main.cpp.o: CXX_COMPILER__wallengine_unscanned_Debug /home/abhay/project/wallengine/main.cpp || cmake_object_order_depends_target_wallengine
+build CMakeFiles/wallengine.dir/main.cpp.o.ddi: CXX_SCAN__wallengine_Debug /home/abhay/project/wallengine/main.cpp || cmake_object_order_depends_target_wallengine
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
+  DEP_FILE = CMakeFiles/wallengine.dir/main.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/wallengine.dir/main.cpp.o.ddi
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
+  OBJ_FILE = CMakeFiles/wallengine.dir/main.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/wallengine.dir/main.cpp.o.ddi.i
+
+build CMakeFiles/wallengine.dir/main.cpp.o: CXX_COMPILER__wallengine_scanned_Debug /home/abhay/project/wallengine/main.cpp | CMakeFiles/wallengine.dir/main.cpp.o.modmap || cmake_object_order_depends_target_wallengine CMakeFiles/wallengine.dir/CXX.dd
   CONFIG = Debug
-  DEFINES = -DWLR_USE_UNSTABLE
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
   DEP_FILE = CMakeFiles/wallengine.dir/main.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26
-  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/wallengine.dir/main.cpp.o.modmap
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
   OBJECT_DIR = CMakeFiles/wallengine.dir
   OBJECT_FILE_DIR = CMakeFiles/wallengine.dir
   TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
+  dyndep = CMakeFiles/wallengine.dir/CXX.dd
 
 build CMakeFiles/wallengine.dir/xdg-shell-protocol.c.o: C_COMPILER__wallengine_unscanned_Debug /home/abhay/project/wallengine/build/xdg-shell-protocol.c || cmake_object_order_depends_target_wallengine
   CONFIG = Debug
-  DEFINES = -DWLR_USE_UNSTABLE
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
   DEP_FILE = CMakeFiles/wallengine.dir/xdg-shell-protocol.c.o.d
   FLAGS = -g
-  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
   OBJECT_DIR = CMakeFiles/wallengine.dir
   OBJECT_FILE_DIR = CMakeFiles/wallengine.dir
   TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
 
 build CMakeFiles/wallengine.dir/wlr-layer-shell-unstable-v1-protocol.c.o: C_COMPILER__wallengine_unscanned_Debug /home/abhay/project/wallengine/build/wlr-layer-shell-unstable-v1-protocol.c || cmake_object_order_depends_target_wallengine
   CONFIG = Debug
-  DEFINES = -DWLR_USE_UNSTABLE
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
   DEP_FILE = CMakeFiles/wallengine.dir/wlr-layer-shell-unstable-v1-protocol.c.o.d
   FLAGS = -g
-  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
   OBJECT_DIR = CMakeFiles/wallengine.dir
   OBJECT_FILE_DIR = CMakeFiles/wallengine.dir
   TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
 
-build CMakeFiles/wallengine.dir/src/texture.cpp.o: CXX_COMPILER__wallengine_unscanned_Debug /home/abhay/project/wallengine/src/texture.cpp || cmake_object_order_depends_target_wallengine
+build CMakeFiles/wallengine.dir/src/texture.cpp.o.ddi: CXX_SCAN__wallengine_Debug /home/abhay/project/wallengine/src/texture.cpp || cmake_object_order_depends_target_wallengine
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
+  DEP_FILE = CMakeFiles/wallengine.dir/src/texture.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/wallengine.dir/src/texture.cpp.o.ddi
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
+  OBJ_FILE = CMakeFiles/wallengine.dir/src/texture.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/wallengine.dir/src/texture.cpp.o.ddi.i
+
+build CMakeFiles/wallengine.dir/src/texture.cpp.o: CXX_COMPILER__wallengine_scanned_Debug /home/abhay/project/wallengine/src/texture.cpp | CMakeFiles/wallengine.dir/src/texture.cpp.o.modmap || cmake_object_order_depends_target_wallengine CMakeFiles/wallengine.dir/CXX.dd
   CONFIG = Debug
-  DEFINES = -DWLR_USE_UNSTABLE
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
   DEP_FILE = CMakeFiles/wallengine.dir/src/texture.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26
-  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/wallengine.dir/src/texture.cpp.o.modmap
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
   OBJECT_DIR = CMakeFiles/wallengine.dir
   OBJECT_FILE_DIR = CMakeFiles/wallengine.dir/src
   TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
+  dyndep = CMakeFiles/wallengine.dir/CXX.dd
 
-build CMakeFiles/wallengine.dir/src/stb.cpp.o: CXX_COMPILER__wallengine_unscanned_Debug /home/abhay/project/wallengine/src/stb.cpp || cmake_object_order_depends_target_wallengine
+build CMakeFiles/wallengine.dir/src/stb.cpp.o.ddi: CXX_SCAN__wallengine_Debug /home/abhay/project/wallengine/src/stb.cpp || cmake_object_order_depends_target_wallengine
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
+  DEP_FILE = CMakeFiles/wallengine.dir/src/stb.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/wallengine.dir/src/stb.cpp.o.ddi
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
+  OBJ_FILE = CMakeFiles/wallengine.dir/src/stb.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/wallengine.dir/src/stb.cpp.o.ddi.i
+
+build CMakeFiles/wallengine.dir/src/stb.cpp.o: CXX_COMPILER__wallengine_scanned_Debug /home/abhay/project/wallengine/src/stb.cpp | CMakeFiles/wallengine.dir/src/stb.cpp.o.modmap || cmake_object_order_depends_target_wallengine CMakeFiles/wallengine.dir/CXX.dd
   CONFIG = Debug
-  DEFINES = -DWLR_USE_UNSTABLE
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
   DEP_FILE = CMakeFiles/wallengine.dir/src/stb.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26
-  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/wallengine.dir/src/stb.cpp.o.modmap
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
   OBJECT_DIR = CMakeFiles/wallengine.dir
   OBJECT_FILE_DIR = CMakeFiles/wallengine.dir/src
   TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
+  dyndep = CMakeFiles/wallengine.dir/CXX.dd
 
-build CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o: CXX_COMPILER__wallengine_unscanned_Debug /home/abhay/project/wallengine/src/waylandinterrupt.cpp || cmake_object_order_depends_target_wallengine
+build CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o.ddi: CXX_SCAN__wallengine_Debug /home/abhay/project/wallengine/src/waylandinterrupt.cpp || cmake_object_order_depends_target_wallengine
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
+  DEP_FILE = CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o.ddi
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
+  OBJ_FILE = CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o.ddi.i
+
+build CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o: CXX_COMPILER__wallengine_scanned_Debug /home/abhay/project/wallengine/src/waylandinterrupt.cpp | CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o.modmap || cmake_object_order_depends_target_wallengine CMakeFiles/wallengine.dir/CXX.dd
   CONFIG = Debug
-  DEFINES = -DWLR_USE_UNSTABLE
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
   DEP_FILE = CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26
-  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o.modmap
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
   OBJECT_DIR = CMakeFiles/wallengine.dir
   OBJECT_FILE_DIR = CMakeFiles/wallengine.dir/src
   TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
+  dyndep = CMakeFiles/wallengine.dir/CXX.dd
 
-build CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o: CXX_COMPILER__wallengine_unscanned_Debug /home/abhay/project/wallengine/src/wayland-xdg/fi_keyboard_handler.cpp || cmake_object_order_depends_target_wallengine
+build CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o.ddi: CXX_SCAN__wallengine_Debug /home/abhay/project/wallengine/src/wayland-xdg/fi_keyboard_handler.cpp || cmake_object_order_depends_target_wallengine
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
+  DEP_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o.ddi
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
+  OBJ_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o.ddi.i
+
+build CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o: CXX_COMPILER__wallengine_scanned_Debug /home/abhay/project/wallengine/src/wayland-xdg/fi_keyboard_handler.cpp | CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o.modmap || cmake_object_order_depends_target_wallengine CMakeFiles/wallengine.dir/CXX.dd
   CONFIG = Debug
-  DEFINES = -DWLR_USE_UNSTABLE
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
   DEP_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26
-  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o.modmap
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
   OBJECT_DIR = CMakeFiles/wallengine.dir
   OBJECT_FILE_DIR = CMakeFiles/wallengine.dir/src/wayland-xdg
   TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
+  dyndep = CMakeFiles/wallengine.dir/CXX.dd
 
-build CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o: CXX_COMPILER__wallengine_unscanned_Debug /home/abhay/project/wallengine/src/wayland-xdg/eventqueue.cpp || cmake_object_order_depends_target_wallengine
+build CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.ddi: CXX_SCAN__wallengine_Debug /home/abhay/project/wallengine/src/wayland-xdg/eventqueue.cpp || cmake_object_order_depends_target_wallengine
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
+  DEP_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.ddi
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
+  OBJ_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.ddi.i
+
+build CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o: CXX_COMPILER__wallengine_scanned_Debug /home/abhay/project/wallengine/src/wayland-xdg/eventqueue.cpp | CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.modmap || cmake_object_order_depends_target_wallengine CMakeFiles/wallengine.dir/CXX.dd
   CONFIG = Debug
-  DEFINES = -DWLR_USE_UNSTABLE
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
   DEP_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++26
-  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.modmap
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
   OBJECT_DIR = CMakeFiles/wallengine.dir
   OBJECT_FILE_DIR = CMakeFiles/wallengine.dir/src/wayland-xdg
   TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
+  dyndep = CMakeFiles/wallengine.dir/CXX.dd
+
+build CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: CXX_SCAN__wallengine_Debug /home/abhay/project/wallengine/src/glsl/font.cpp || cmake_object_order_depends_target_wallengine
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
+  DEP_FILE = CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
+  OBJ_FILE = CMakeFiles/wallengine.dir/src/glsl/font.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi.i
+
+build CMakeFiles/wallengine.dir/src/glsl/font.cpp.o: CXX_COMPILER__wallengine_scanned_Debug /home/abhay/project/wallengine/src/glsl/font.cpp | CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.modmap || cmake_object_order_depends_target_wallengine CMakeFiles/wallengine.dir/CXX.dd
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
+  DEP_FILE = CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.modmap
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
+  OBJECT_DIR = CMakeFiles/wallengine.dir
+  OBJECT_FILE_DIR = CMakeFiles/wallengine.dir/src/glsl
+  TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
+  dyndep = CMakeFiles/wallengine.dir/CXX.dd
+
+build CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o.ddi: CXX_SCAN__wallengine_Debug /home/abhay/project/wallengine/src/utils/setmap.cpp || cmake_object_order_depends_target_wallengine
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
+  DEP_FILE = CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o.ddi
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
+  OBJ_FILE = CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o.ddi.i
+
+build CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o: CXX_COMPILER__wallengine_scanned_Debug /home/abhay/project/wallengine/src/utils/setmap.cpp | CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o.modmap || cmake_object_order_depends_target_wallengine CMakeFiles/wallengine.dir/CXX.dd
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0 -DWLR_USE_UNSTABLE
+  DEP_FILE = CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o.modmap
+  FLAGS = -g -std=gnu++26
+  INCLUDES = -I/usr/include/wlroots-0.19 -I/usr/include/pixman-1 -I/usr/include/libdrm -I/home/abhay/project/wallengine/build -I/home/abhay/project/wallengine/externalheaders/stb -I/home/abhay/project/wallengine/projectheaders -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src
+  OBJECT_DIR = CMakeFiles/wallengine.dir
+  OBJECT_FILE_DIR = CMakeFiles/wallengine.dir/src/utils
+  TARGET_SUPPORT_DIR = CMakeFiles/wallengine.dir
+  dyndep = CMakeFiles/wallengine.dir/CXX.dd
+
+build CMakeFiles/wallengine.dir/CXX.dd | CMakeFiles/wallengine.dir/CXXModules.json CMakeFiles/wallengine.dir/main.cpp.o.modmap CMakeFiles/wallengine.dir/src/texture.cpp.o.modmap CMakeFiles/wallengine.dir/src/stb.cpp.o.modmap CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o.modmap CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o.modmap CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.modmap CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.modmap CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o.modmap: CXX_DYNDEP__wallengine_Debug CMakeFiles/wallengine.dir/main.cpp.o.ddi CMakeFiles/wallengine.dir/src/texture.cpp.o.ddi CMakeFiles/wallengine.dir/src/stb.cpp.o.ddi CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o.ddi CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o.ddi CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.ddi CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o.ddi | /home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -137,12 +247,12 @@ build CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o: CXX_COMPILER__
 #############################################
 # Link the executable wallengine
 
-build wallengine: CXX_EXECUTABLE_LINKER__wallengine_Debug CMakeFiles/wallengine.dir/main.cpp.o CMakeFiles/wallengine.dir/xdg-shell-protocol.c.o CMakeFiles/wallengine.dir/wlr-layer-shell-unstable-v1-protocol.c.o CMakeFiles/wallengine.dir/src/texture.cpp.o CMakeFiles/wallengine.dir/src/stb.cpp.o CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o
+build wallengine: CXX_EXECUTABLE_LINKER__wallengine_Debug CMakeFiles/wallengine.dir/main.cpp.o CMakeFiles/wallengine.dir/xdg-shell-protocol.c.o CMakeFiles/wallengine.dir/wlr-layer-shell-unstable-v1-protocol.c.o CMakeFiles/wallengine.dir/src/texture.cpp.o CMakeFiles/wallengine.dir/src/stb.cpp.o CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o CMakeFiles/wallengine.dir/src/glsl/font.cpp.o CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o | _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a /usr/lib/libpng.so /usr/lib/libz.so _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a /usr/lib/libtinyxml2.so.11.0.0 /usr/lib/libpng.so /usr/lib/libz.so /usr/lib/libfreetype.so _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a || _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a
   CONFIG = Debug
   DEP_FILE = CMakeFiles/wallengine.dir/link.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g
+  FLAGS = -g
   LINK_FLAGS = -Xlinker --dependency-file=CMakeFiles/wallengine.dir/link.d
-  LINK_LIBRARIES = -lwlroots-0.19  -lwayland-client  -lm  -lwayland-egl  -lwayland-client  -lm  -lGLESv2  -lEGL  -lxkbcommon  -lwayland-egl  -lGLESv2  -lEGL  -lxkbcommon
+  LINK_LIBRARIES = -lwlroots-0.19  -lwayland-client  -lm  -lwayland-egl  -lwayland-client  -lm  -lGLESv2  -lEGL  -lxkbcommon  -lfreetype  _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a  _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a  -lfontconfig  -lwayland-egl  -lGLESv2  -lEGL  -lxkbcommon  -lfreetype  -lfontconfig  /usr/lib/libpng.so  /usr/lib/libz.so  _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a  /usr/lib/libtinyxml2.so.11.0.0  /usr/lib/libpng.so  /usr/lib/libz.so  /usr/lib/libfreetype.so  _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a
   OBJECT_DIR = CMakeFiles/wallengine.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -178,7 +288,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Custom command for xdg-shell-protocol.c
 
-build xdg-shell-protocol.c | ${cmake_ninja_workdir}xdg-shell-protocol.c: CUSTOM_COMMAND //usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml
+build xdg-shell-protocol.c | ${cmake_ninja_workdir}xdg-shell-protocol.c: CUSTOM_COMMAND //usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml || _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a
   COMMAND = cd /home/abhay/project/wallengine/build && /usr/bin/wayland-scanner private-code //usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml /home/abhay/project/wallengine/build/xdg-shell-protocol.c
   DESC = Generating xdg-shell-protocol.c
   restat = 1
@@ -187,7 +297,7 @@ build xdg-shell-protocol.c | ${cmake_ninja_workdir}xdg-shell-protocol.c: CUSTOM_
 #############################################
 # Custom command for wlr-layer-shell-unstable-v1-protocol.c
 
-build wlr-layer-shell-unstable-v1-protocol.c | ${cmake_ninja_workdir}wlr-layer-shell-unstable-v1-protocol.c: CUSTOM_COMMAND /home/abhay/tmptasks/wlroots/protocol/wlr-layer-shell-unstable-v1.xml
+build wlr-layer-shell-unstable-v1-protocol.c | ${cmake_ninja_workdir}wlr-layer-shell-unstable-v1-protocol.c: CUSTOM_COMMAND /home/abhay/tmptasks/wlroots/protocol/wlr-layer-shell-unstable-v1.xml || _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a
   COMMAND = cd /home/abhay/project/wallengine/build && /usr/bin/wayland-scanner private-code /home/abhay/tmptasks/wlroots/protocol/wlr-layer-shell-unstable-v1.xml /home/abhay/project/wallengine/build/wlr-layer-shell-unstable-v1-protocol.c
   DESC = Generating wlr-layer-shell-unstable-v1-protocol.c
   restat = 1
@@ -196,7 +306,7 @@ build wlr-layer-shell-unstable-v1-protocol.c | ${cmake_ninja_workdir}wlr-layer-s
 #############################################
 # Custom command for xdg-shell-client-protocol.h
 
-build xdg-shell-client-protocol.h | ${cmake_ninja_workdir}xdg-shell-client-protocol.h: CUSTOM_COMMAND //usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml
+build xdg-shell-client-protocol.h | ${cmake_ninja_workdir}xdg-shell-client-protocol.h: CUSTOM_COMMAND //usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml || _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a
   COMMAND = cd /home/abhay/project/wallengine/build && /usr/bin/wayland-scanner client-header //usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml /home/abhay/project/wallengine/build/xdg-shell-client-protocol.h
   DESC = Generating xdg-shell-client-protocol.h
   restat = 1
@@ -205,13 +315,610 @@ build xdg-shell-client-protocol.h | ${cmake_ninja_workdir}xdg-shell-client-proto
 #############################################
 # Custom command for wlr-layer-shell-unstable-v1-client-protocol.h
 
-build wlr-layer-shell-unstable-v1-client-protocol.h | ${cmake_ninja_workdir}wlr-layer-shell-unstable-v1-client-protocol.h: CUSTOM_COMMAND /home/abhay/tmptasks/wlroots/protocol/wlr-layer-shell-unstable-v1.xml
+build wlr-layer-shell-unstable-v1-client-protocol.h | ${cmake_ninja_workdir}wlr-layer-shell-unstable-v1-client-protocol.h: CUSTOM_COMMAND /home/abhay/tmptasks/wlroots/protocol/wlr-layer-shell-unstable-v1.xml || _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a
   COMMAND = cd /home/abhay/project/wallengine/build && /usr/bin/wayland-scanner client-header /home/abhay/tmptasks/wlroots/protocol/wlr-layer-shell-unstable-v1.xml /home/abhay/project/wallengine/build/wlr-layer-shell-unstable-v1-client-protocol.h
   DESC = Generating wlr-layer-shell-unstable-v1-client-protocol.h
   restat = 1
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/abhay/project/wallengine/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target msdf-atlas-gen
+
+
+#############################################
+# Order-only phony target for msdf-atlas-gen
+
+build cmake_object_order_depends_target_msdf-atlas-gen: phony || cmake_object_order_depends_target_msdfgen-core cmake_object_order_depends_target_msdfgen-ext
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Charset.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Charset.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Charset.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/FontGeometry.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/FontGeometry.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/FontGeometry.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/GlyphGeometry.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/GlyphGeometry.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/GlyphGeometry.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/GridAtlasPacker.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/GridAtlasPacker.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/GridAtlasPacker.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Padding.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Padding.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Padding.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/RectanglePacker.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/RectanglePacker.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/RectanglePacker.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/TightAtlasPacker.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/TightAtlasPacker.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/TightAtlasPacker.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Workload.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Workload.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Workload.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/artery-font-export.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/artery-font-export.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/artery-font-export.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/bitmap-blit.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/bitmap-blit.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/bitmap-blit.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/charset-parser.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/charset-parser.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/charset-parser.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/csv-export.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/csv-export.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/csv-export.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/glyph-generators.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/glyph-generators.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/glyph-generators.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/image-encode.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/image-encode.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/image-encode.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/json-export.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/json-export.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/json-export.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/main.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/main.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/main.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/shadron-preview-generator.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/shadron-preview-generator.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/shadron-preview-generator.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/size-selectors.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/size-selectors.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/size-selectors.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/utf8.cpp.o: CXX_COMPILER__msdf-atlas-gen_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/utf8.cpp || cmake_object_order_depends_target_msdf-atlas-gen
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXTENSIONS -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DMSDF_ATLAS_COPYRIGHT_YEAR=2026 -DMSDF_ATLAS_PUBLIC="" -DMSDF_ATLAS_VERSION=1.3.0 -DMSDF_ATLAS_VERSION_MAJOR=1 -DMSDF_ATLAS_VERSION_MINOR=3 -DMSDF_ATLAS_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/utf8.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/artery-font-format -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target msdf-atlas-gen
+
+
+#############################################
+# Link the static library _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a
+
+build _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a: CXX_STATIC_LIBRARY_LINKER__msdf-atlas-gen_Debug _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Charset.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/FontGeometry.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/GlyphGeometry.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/GridAtlasPacker.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Padding.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/RectanglePacker.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/TightAtlasPacker.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/Workload.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/artery-font-export.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/bitmap-blit.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/charset-parser.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/csv-export.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/glyph-generators.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/image-encode.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/json-export.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/main.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/shadron-preview-generator.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/size-selectors.cpp.o _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir/msdf-atlas-gen/utf8.cpp.o || _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a
+  TARGET_PDB = msdf-atlas-gen.a.dbg
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build && /usr/bin/ccmake -S/home/abhay/project/wallengine -B/home/abhay/project/wallengine/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/msdf-atlas-gen-build/edit_cache: phony _deps/msdf-atlas-gen-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/msdf-atlas-gen-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build && /usr/bin/cmake --regenerate-during-build -S/home/abhay/project/wallengine -B/home/abhay/project/wallengine/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/msdf-atlas-gen-build/rebuild_cache: phony _deps/msdf-atlas-gen-build/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target msdfgen-core
+
+
+#############################################
+# Order-only phony target for msdfgen-core
+
+build cmake_object_order_depends_target_msdfgen-core: phony || .
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Contour.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Contour.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Contour.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/DistanceMapping.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/DistanceMapping.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/DistanceMapping.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/EdgeHolder.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/EdgeHolder.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/EdgeHolder.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/MSDFErrorCorrection.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/MSDFErrorCorrection.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/MSDFErrorCorrection.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Projection.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Projection.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Projection.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Scanline.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Scanline.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Scanline.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Shape.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Shape.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Shape.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/contour-combiners.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/contour-combiners.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/contour-combiners.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/convergent-curve-ordering.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/convergent-curve-ordering.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/convergent-curve-ordering.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-coloring.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-coloring.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-coloring.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-segments.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-segments.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-segments.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-selectors.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-selectors.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-selectors.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/equation-solver.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/equation-solver.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/equation-solver.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/export-svg.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/export-svg.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/export-svg.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/msdf-error-correction.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/msdf-error-correction.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/msdf-error-correction.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/msdfgen.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/msdfgen.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/msdfgen.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/rasterization.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/rasterization.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/rasterization.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/render-sdf.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/render-sdf.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/render-sdf.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-bmp.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-bmp.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-bmp.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-fl32.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-fl32.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-fl32.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-rgba.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-rgba.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-rgba.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-tiff.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-tiff.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-tiff.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/sdf-error-estimation.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/sdf-error-estimation.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/sdf-error-estimation.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/shape-description.cpp.o: CXX_COMPILER__msdfgen-core_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/shape-description.cpp || cmake_object_order_depends_target_msdfgen-core
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/shape-description.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target msdfgen-core
+
+
+#############################################
+# Link the static library _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a
+
+build _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a: CXX_STATIC_LIBRARY_LINKER__msdfgen-core_Debug _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Contour.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/DistanceMapping.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/EdgeHolder.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/MSDFErrorCorrection.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Projection.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Scanline.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/Shape.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/contour-combiners.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/convergent-curve-ordering.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-coloring.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-segments.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/edge-selectors.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/equation-solver.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/export-svg.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/msdf-error-correction.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/msdfgen.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/rasterization.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/render-sdf.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-bmp.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-fl32.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-rgba.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/save-tiff.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/sdf-error-estimation.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir/core/shape-description.cpp.o
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a
+  TARGET_PDB = msdfgen-core.a.dbg
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target msdfgen-ext
+
+
+#############################################
+# Order-only phony target for msdfgen-ext
+
+build cmake_object_order_depends_target_msdfgen-ext: phony || cmake_object_order_depends_target_msdfgen-core
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/import-font.cpp.o: CXX_COMPILER__msdfgen-ext_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-font.cpp || cmake_object_order_depends_target_msdfgen-ext
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/import-font.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/include -isystem /usr/include/freetype2
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/import-svg.cpp.o: CXX_COMPILER__msdfgen-ext_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-svg.cpp || cmake_object_order_depends_target_msdfgen-ext
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/import-svg.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/include -isystem /usr/include/freetype2
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/resolve-shape-geometry.cpp.o: CXX_COMPILER__msdfgen-ext_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/resolve-shape-geometry.cpp || cmake_object_order_depends_target_msdfgen-ext
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/resolve-shape-geometry.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/include -isystem /usr/include/freetype2
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/save-png.cpp.o: CXX_COMPILER__msdfgen-ext_unscanned_Debug /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/save-png.cpp || cmake_object_order_depends_target_msdfgen-ext
+  CONFIG = Debug
+  DEFINES = -DMSDFGEN_COPYRIGHT_YEAR=2026 -DMSDFGEN_EXT_PUBLIC="" -DMSDFGEN_PUBLIC="" -DMSDFGEN_USE_CPP11 -DMSDFGEN_USE_LIBPNG -DMSDFGEN_USE_TINYXML2 -DMSDFGEN_VERSION=1.13.0 -DMSDFGEN_VERSION_MAJOR=1 -DMSDFGEN_VERSION_MINOR=13 -DMSDFGEN_VERSION_REVISION=0 -DTINYXML2_DEBUG -DTINYXML2_IMPORT -D_FILE_OFFSET_BITS=64
+  DEP_FILE = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/save-png.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen -I/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/include -isystem /usr/include/freetype2
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir
+  OBJECT_FILE_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target msdfgen-ext
+
+
+#############################################
+# Link the static library _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a
+
+build _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a: CXX_STATIC_LIBRARY_LINKER__msdfgen-ext_Debug _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/import-font.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/import-svg.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/resolve-shape-geometry.cpp.o _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir/ext/save-png.cpp.o || _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a
+  TARGET_PDB = msdfgen-ext.a.dbg
+  TARGET_SUPPORT_DIR = _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen && /usr/bin/ccmake -S/home/abhay/project/wallengine -B/home/abhay/project/wallengine/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/msdf-atlas-gen-build/msdfgen/edit_cache: phony _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen && /usr/bin/cmake --regenerate-during-build -S/home/abhay/project/wallengine -B/home/abhay/project/wallengine/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/msdf-atlas-gen-build/msdfgen/rebuild_cache: phony _deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
+
+build libmsdf-atlas-gen.a: phony _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a
+
+build libmsdfgen-core.a: phony _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a
+
+build libmsdfgen-ext.a: phony _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a
+
+build msdf-atlas-gen: phony _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a
+
+build msdfgen-core: phony _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a
+
+build msdfgen-ext: phony _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a
 
 # =============================================================================
 # Folder targets.
@@ -221,7 +928,42 @@ build wlr-layer-shell-unstable-v1-client-protocol.h | ${cmake_ninja_workdir}wlr-
 #############################################
 # Folder: /home/abhay/project/wallengine/build
 
-build all: phony wallengine
+build codegen: phony _deps/msdf-atlas-gen-build/codegen
+
+# =============================================================================
+
+#############################################
+# Folder: /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build
+
+build _deps/msdf-atlas-gen-build/codegen: phony _deps/msdf-atlas-gen-build/msdfgen/codegen
+
+# =============================================================================
+
+#############################################
+# Folder: /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen
+
+build _deps/msdf-atlas-gen-build/msdfgen/codegen: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /home/abhay/project/wallengine/build
+
+build all: phony wallengine _deps/msdf-atlas-gen-build/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build
+
+build _deps/msdf-atlas-gen-build/all: phony _deps/msdf-atlas-gen-build/libmsdf-atlas-gen.a _deps/msdf-atlas-gen-build/msdfgen/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen
+
+build _deps/msdf-atlas-gen-build/msdfgen/all: phony _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-core.a _deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a
 
 # =============================================================================
 # Built-in targets
@@ -230,14 +972,14 @@ build all: phony wallengine
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /home/abhay/project/wallengine/build/cmake_install.cmake: RERUN_CMAKE | /home/abhay/project/wallengine/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-C.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCCompiler.cmake CMakeFiles/4.2.1/CMakeCXXCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake
+build build.ninja /home/abhay/project/wallengine/build/cmake_install.cmake /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/cmake_install.cmake /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/cmake_install.cmake: RERUN_CMAKE | /home/abhay/project/wallengine/CMakeLists.txt /usr/lib/cmake/tinyxml2/tinyxml2-config-version.cmake /usr/lib/cmake/tinyxml2/tinyxml2-config.cmake /usr/lib/cmake/tinyxml2/tinyxml2-shared-targets-noconfig.cmake /usr/lib/cmake/tinyxml2/tinyxml2-shared-targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-C.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/ExternalProject/PatchInfo.txt.in /usr/share/cmake/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake/Modules/ExternalProject/UpdateInfo.txt.in /usr/share/cmake/Modules/ExternalProject/gitclone.cmake.in /usr/share/cmake/Modules/ExternalProject/gitupdate.cmake.in /usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake /usr/share/cmake/Modules/ExternalProject/stepscript.cmake.in /usr/share/cmake/Modules/FetchContent.cmake /usr/share/cmake/Modules/FindFreetype.cmake /usr/share/cmake/Modules/FindGit.cmake /usr/share/cmake/Modules/FindPNG.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindZLIB.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCCompiler.cmake CMakeFiles/4.2.1/CMakeCXXCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake _deps/msdf-atlas-gen-src/CMakeLists.txt _deps/msdf-atlas-gen-src/cmake/version.cmake _deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt _deps/msdf-atlas-gen-src/msdfgen/cmake/version.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/abhay/project/wallengine/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-C.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCCompiler.cmake CMakeFiles/4.2.1/CMakeCXXCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake: phony
+build /home/abhay/project/wallengine/CMakeLists.txt /usr/lib/cmake/tinyxml2/tinyxml2-config-version.cmake /usr/lib/cmake/tinyxml2/tinyxml2-config.cmake /usr/lib/cmake/tinyxml2/tinyxml2-shared-targets-noconfig.cmake /usr/lib/cmake/tinyxml2/tinyxml2-shared-targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-C.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/ExternalProject/PatchInfo.txt.in /usr/share/cmake/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake/Modules/ExternalProject/UpdateInfo.txt.in /usr/share/cmake/Modules/ExternalProject/gitclone.cmake.in /usr/share/cmake/Modules/ExternalProject/gitupdate.cmake.in /usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake /usr/share/cmake/Modules/ExternalProject/stepscript.cmake.in /usr/share/cmake/Modules/FetchContent.cmake /usr/share/cmake/Modules/FindFreetype.cmake /usr/share/cmake/Modules/FindGit.cmake /usr/share/cmake/Modules/FindPNG.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindZLIB.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCCompiler.cmake CMakeFiles/4.2.1/CMakeCXXCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake _deps/msdf-atlas-gen-src/CMakeLists.txt _deps/msdf-atlas-gen-src/cmake/version.cmake _deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt _deps/msdf-atlas-gen-src/msdfgen/cmake/version.cmake: phony
 
 
 #############################################

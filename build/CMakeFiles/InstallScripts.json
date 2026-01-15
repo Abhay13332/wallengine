@@ -1,7 +1,9 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/abhay/project/wallengine/build/cmake_install.cmake"
+		"/home/abhay/project/wallengine/build/cmake_install.cmake",
+		"/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/cmake_install.cmake",
+		"/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

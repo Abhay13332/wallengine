@@ -3,6 +3,7 @@
 
 #include "wayland-xdg/eventqueue.hpp"
 #include <chrono>
+#include <filesystem>
 #include <texture.hpp>
 #include <wayland-xdg/fi_keyboard_handler.hpp>
 #include <waylandinterrupt.hpp>
@@ -12,19 +13,22 @@
 #include <GLES3/gl32.h>
 #include <wayland-client-protocol.h>
 #include <wayland-xdg/fi_pointer_handler.hpp>
+#include <glsl/font.hpp>
 using namespace std;
+ 
+// stb include dd
 
-// stb include
 
 void err(const string& str){
 cout << "err:"<<str;
 exit(EXIT_SUCCESS);
 }
 string readfile(const string &path){
+    cout << std::filesystem::absolute(path);
     std:ifstream openfile(path);
     if(!openfile){
         
-        err("readfile");
+        err("readfile"+path);
 
     }
     stringstream buff;
@@ -144,6 +148,7 @@ static void on_ping(void* data, struct xdg_wm_base* wm_base, uint32_t ser) { xdg
 static const struct xdg_wm_base_listener shell_list = { .ping = on_ping };
 
 int main() {
+    load_font();
     signals_bind();
     auto *disp= wl_display_connect(nullptr);
     auto *reg  = wl_display_get_registry(disp);
@@ -171,7 +176,7 @@ int main() {
         xdg_toplevel_set_title(top, "GPU Animated Window");
         
         
-        int width = 1080, height = 1920;
+        int width = 1920, height = 1080;
         struct wl_egl_window *ewin = wl_egl_window_create(surf, width, height);
         EGLSurface esur = eglCreateWindowSurface(edpy, cfg, ewin, nullptr);
         //setting current window for drawing context
@@ -236,7 +241,6 @@ int main() {
             if(time>2.1){
                addition=-0.01F;
             }
-           std::this_thread::sleep_for(std::chrono::milliseconds(200));
             if(time<=0){
                 addition=0.01F;
             }

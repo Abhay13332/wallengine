@@ -1,0 +1,15 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/wallengine.dir/main.cpp.o: dyndep
+
+build CMakeFiles/wallengine.dir/src/texture.cpp.o: dyndep
+
+build CMakeFiles/wallengine.dir/src/stb.cpp.o: dyndep
+
+build CMakeFiles/wallengine.dir/src/waylandinterrupt.cpp.o: dyndep
+
+build CMakeFiles/wallengine.dir/src/wayland-xdg/fi_keyboard_handler.cpp.o: dyndep
+
+build CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o: dyndep
+
+build CMakeFiles/wallengine.dir/src/glsl/font.cpp.o: dyndep
+

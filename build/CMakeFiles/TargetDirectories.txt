@@ -1,3 +1,10 @@
 /home/abhay/project/wallengine/build/CMakeFiles/wallengine.dir
 /home/abhay/project/wallengine/build/CMakeFiles/edit_cache.dir
 /home/abhay/project/wallengine/build/CMakeFiles/rebuild_cache.dir
+/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/msdf-atlas-gen.dir
+/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/edit_cache.dir
+/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/CMakeFiles/rebuild_cache.dir
+/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-core.dir
+/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/msdfgen-ext.dir
+/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/edit_cache.dir
+/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-build/msdfgen/CMakeFiles/rebuild_cache.dir

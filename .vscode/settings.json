@@ -1,3 +1,9 @@
 {
-    "clangd.arguments": ["--compile-commands-dir=${workspaceFolder}/build"]
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build"
+    ],
+    "cmake.sourceDirectory": "${workspaceFolder}/CMakeLists.txt",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnOpen": true,
+
 }
