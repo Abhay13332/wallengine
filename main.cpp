@@ -1,24 +1,21 @@
 
-//src
-
 #include "wayland-xdg/eventqueue.hpp"
 #include <chrono>
 #include <filesystem>
-#include <texture.hpp>
+#include <glsl/texture.hpp>
 #include <wayland-xdg/fi_keyboard_handler.hpp>
 #include <waylandinterrupt.hpp>
 #include <xdg-shell-client-protocol.h>
 #include <utils/smpointer.hpp>
-#include <EGL/egl.h>
-#include <GLES3/gl32.h>
+
 #include <wayland-client-protocol.h>
 #include <wayland-xdg/fi_pointer_handler.hpp>
-#include <glsl/font.hpp>
+#include "glsl/font.hpp"
 using namespace std;
  
 // stb include dd
 
-
+ 
 void err(const string& str){
 cout << "err:"<<str;
 exit(EXIT_SUCCESS);
@@ -53,8 +50,8 @@ GLuint createShader(GLenum type,const char* src){
 }
 GLuint attachshaderandgetprogram(){
   
-    string  frag_src_str=readfile("src_sh/fragment.glsl");
-    string  vert_src_str=readfile("src_sh/vertex.glsl");
+    string  frag_src_str=readfile(std::string(SOURCE_DIR)+"src_sh/fragment.glsl");
+    string  vert_src_str=readfile(std::string(SOURCE_DIR)+"src_sh/vertex.glsl");
     const char* vert_src=vert_src_str.c_str();
     const char* frag_src=frag_src_str.c_str();
     const GLuint fragshadId = createShader(GL_FRAGMENT_SHADER,frag_src);
@@ -130,7 +127,7 @@ static void on_global(void* data, struct wl_registry* reg, uint32_t id, const ch
 
     if(!strcmp(intf,wl_seat_interface.name)){
             unique_ptr<seatData> currst=make_unique<seatData>(seatData({
-                .global_id=id,
+             .global_id=id,
                 
             }));
          
@@ -148,7 +145,7 @@ static void on_ping(void* data, struct xdg_wm_base* wm_base, uint32_t ser) { xdg
 static const struct xdg_wm_base_listener shell_list = { .ping = on_ping };
 
 int main() {
-    load_font();
+   
     signals_bind();
     auto *disp= wl_display_connect(nullptr);
     auto *reg  = wl_display_get_registry(disp);
@@ -161,12 +158,25 @@ int main() {
     EGLDisplay edpy = eglGetDisplay((EGLNativeDisplayType)disp);
     eglInitialize(edpy, nullptr, nullptr);
      
-    EGLint attr[] = { EGL_RED_SIZE, 8, EGL_GREEN_SIZE, 8, EGL_BLUE_SIZE, 8, 
-        EGL_RENDERABLE_TYPE, EGL_OPENGL_ES3_BIT, EGL_NONE };
+    EGLint attr[] = { EGL_RED_SIZE, 8,
+         EGL_GREEN_SIZE, 8,
+         EGL_BLUE_SIZE, 8, 
+         EGL_RENDERABLE_TYPE, EGL_OPENGL_BIT,
+         EGL_SAMPLE_BUFFERS, 1,
+        EGL_SAMPLES, 4, 
+        EGL_NONE };
+        eglBindAPI(EGL_OPENGL_API);
         EGLConfig cfg; EGLint n;
+
         eglChooseConfig(edpy, attr, &cfg, 1, &n);
         
-        EGLint cattr[] = { EGL_CONTEXT_MAJOR_VERSION, 3,EGL_CONTEXT_MINOR_VERSION,2, EGL_NONE };
+        EGLint cattr[] = { 
+            EGL_CONTEXT_MAJOR_VERSION, 4,
+            EGL_CONTEXT_MINOR_VERSION,6,
+            EGL_CONTEXT_OPENGL_PROFILE_MASK,
+            EGL_CONTEXT_OPENGL_CORE_PROFILE_BIT,
+            EGL_NONE 
+        };
         EGLContext ctx = eglCreateContext(edpy, cfg, EGL_NO_CONTEXT, cattr);
         
         
@@ -176,7 +186,7 @@ int main() {
         xdg_toplevel_set_title(top, "GPU Animated Window");
         
         
-        int width = 1920, height = 1080;
+        int width = 1920/2, height =1080/2;
         struct wl_egl_window *ewin = wl_egl_window_create(surf, width, height);
         EGLSurface esur = eglCreateWindowSurface(edpy, cfg, ewin, nullptr);
         //setting current window for drawing context
@@ -212,31 +222,43 @@ int main() {
     GLuint pointerX_loc=glGetUniformLocation(programId, "programX");
     GLuint pointerY_loc=glGetUniformLocation(programId, "programY");
     GLint txt1_loc=glGetUniformLocation(programId,"txt1");
-    GLuint txt1Id=texture("/home/abhay/Pictures/wallpapersmpvpaper/wallpaper_20251228_171553.png");
+    fi_font font("/usr/share/fonts/Adwaita/AdwaitaMono-Regular.ttf");
+    font.load_font();
+    GLuint txt1Id=fi_glsl_set_texture("/home/abhay/Pictures/Wallpapers/wallhaven-1qq9w1.jpg").textureId;
     GLint txt2_loc=glGetUniformLocation(programId,"txt2");
-    GLuint txt2Id=texture("/home/abhay/Pictures/wallpapersmpvpaper/wallpaper_20251222_205854.png");
+    
+    GLuint txt2Id=fi_glsl_set_texture((std::string(SOURCE_DIR)+"new.png")).textureId;
+    cout << txt1Id << " " << txt2Id<<"\n";
+    // cout << (font.bitmap.pixels==nullptr) << endl;
+     
+    cout << font.channels<< endl;
+    // stbi_write_png((std::string(SOURCE_DIR)+"new.png").c_str(),font.bitmap.width,font.bitmap.height,3,font.ptr,font.bitmap.width*3);
 
+    GLuint txtfontbitmapId =fi_glsl_set_texture(font.bitmap.height,font.bitmap.width,font.channels,font.bitmap.pixels).textureId;
     glBindVertexArray(vao);
     float time=0;
-       
+
     glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D,txt1Id);
+    glBindTexture(GL_TEXTURE_2D,txtfontbitmapId);
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D,txt2Id);
+    check_glsl_error();
     glUniform1i(txt1_loc,0);
     glUniform1i(txt2_loc,1);
-
+//  fi_font textFont;
+//     textFont.load_font();
+//     auto piel=textFont.bitmap.pixels;
    float addition=0.01F;
     
    while (!exitflag_sig && wl_display_dispatch(disp) != -1) {
            
             time+=addition;
-             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+            //  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
             
             glUniform1f(time_loc,time);
             glUniform1f(pointerX_loc, pointH.x);
             glUniform1f(pointerY_loc, pointH.y);
-            glDrawElements(GL_TRIANGLE_STRIP,6,GL_UNSIGNED_INT,0);
+            glDrawElements(GL_TRIANGLE_STRIP,6,GL_UNSIGNED_INT,nullptr);
             eglSwapBuffers(edpy, esur);
             if(time>2.1){
                addition=-0.01F;

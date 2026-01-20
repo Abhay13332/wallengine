@@ -3,6 +3,8 @@
 #include "wayland-xdg/eventqueue.hpp"
 #include <includeall.hpp>
 #include <memory>
+#include <xkbcommon/xkbcommon-compat.h>
+#include <xkbcommon/xkbcommon.h>
 struct fi_xkb_indices {
   xkb_mod_index_t alt, super, caps, shift, ctrl;
 } __attribute__((aligned(32)));
@@ -21,7 +23,7 @@ public:
   static void keyboard_handle_keymap(void *data, struct wl_keyboard *keyboard,
                                      uint32_t format, int32_t fd,
                                      uint32_t size) {
-    fi_keyboard_handler *instance = static_cast<fi_keyboard_handler *>(data);
+    auto *instance = static_cast<fi_keyboard_handler *>(data);
     xkb_context *ctx = xkb_context_new(XKB_CONTEXT_NO_FLAGS);
     char *memmap =
         static_cast<char *>(mmap(nullptr, size, PROT_READ, MAP_PRIVATE, fd, 0));
@@ -43,13 +45,17 @@ public:
   static void keyboard_handle_key(void *data, struct wl_keyboard *keyboard,
                                   uint32_t serial, uint32_t time, uint32_t key,
                                   uint32_t state) {
-    fi_keyboard_handler *instance = static_cast<fi_keyboard_handler *>(data);
+    auto *instance = static_cast<fi_keyboard_handler *>(data);
 
     uint32_t xkbkey = 8 + key;
     if (state == WL_KEYBOARD_KEY_STATE_PRESSED ||
         state == WL_KEYBOARD_KEY_STATE_RELEASED) {
       char buf[128];
-      xkb_state_key_get_utf8(instance->keystate, xkbkey, buf, sizeof(buf));
+      
+      auto sym=xkb_state_key_get_one_sym(instance->keystate,xkbkey);
+      xkb_keysym_get_name(sym,buf, sizeof(buf));
+      std::cout << buf<< std::endl;
+
       fi_event keyboard_event = {
           .eventtype = state == WL_KEYBOARD_KEY_STATE_PRESSED
                            ? FI_KEYBOARD_PRESSED
@@ -77,6 +83,14 @@ public:
                       XKB_STATE_MODS_EFFECTIVE),
 
               }}));
+              if((bool)xkb_state_mod_index_is_active(
+                      instance->keystate, instance->indices.ctrl,
+                      XKB_STATE_MODS_EFFECTIVE) && std::string(buf)=="c" ){
+                        std::exit(3);
+                        std::cout << "yes" << std::endl; 
+                      }else{
+                        std::cout << "no" << std::endl; 
+                      }
 
       instance->queue->addEvent(std::move(keyboard_event));
     }
@@ -96,7 +110,7 @@ public:
                                         uint32_t mods_depressed,
                                         uint32_t mods_latched,
                                         uint32_t mods_locked, uint32_t group) {
-    // keyhandling
+    xkb_state_update_mask(static_cast<fi_keyboard_handler*>(data)->keystate, mods_depressed,mods_latched, mods_locked, 0,0,group);
   }
   static void keyboard_handle_enter(void *data, wl_keyboard *wl_keyboard,
                                     uint32_t serial, wl_surface *surface,

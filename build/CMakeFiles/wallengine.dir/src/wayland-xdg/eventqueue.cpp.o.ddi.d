@@ -359,6 +359,10 @@ CMakeFiles/wallengine.dir/src/wayland-xdg/eventqueue.cpp.o.ddi: \
   /usr/include/wayland-egl.h /usr/include/wayland-egl-core.h \
   /usr/include/EGL/egl.h /usr/include/EGL/eglplatform.h \
   /usr/include/KHR/khrplatform.h /usr/include/GLES3/gl32.h \
-  /usr/include/GLES3/gl3platform.h \
+  /usr/include/GLES3/gl3platform.h /usr/include/GL/gl.h \
+  /usr/include/GL/glext.h \
   /home/abhay/project/wallengine/build/xdg-shell-client-protocol.h \
-  /home/abhay/project/wallengine/externalheaders/stb/stb_image.h
+  /home/abhay/project/wallengine/projectheaders/utils/helpermacros.hpp \
+  /home/abhay/project/wallengine/build/wlr-layer-shell-unstable-v1-client-protocol.h \
+  /home/abhay/project/wallengine/externalheaders/stb/stb_image.h \
+  /home/abhay/project/wallengine/externalheaders/stb/stb_image_write.h

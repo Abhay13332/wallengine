@@ -1115,8 +1115,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-kSMjaO"
-      binary: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-kSMjaO"
+      source: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-dLrcn5"
+      binary: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-dLrcn5"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps"
       CMAKE_C_FLAGS: ""
@@ -1126,10 +1126,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-kSMjaO'
+        Change Dir: '/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-dLrcn5'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_7a3bb
-        [1/2] /usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/ninja -v cmTC_df9db
+        [1/2] /usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         clang version 21.1.6
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -1141,7 +1141,7 @@ events:
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
          (in-process)
-         "/usr/bin/clang-21" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-kSMjaO -v -fcoverage-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-kSMjaO -resource-dir /usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+         "/usr/bin/clang-21" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-dLrcn5 -v -fcoverage-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-dLrcn5 -resource-dir /usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 21.1.6 based upon LLVM 21.1.6 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -1151,7 +1151,7 @@ events:
          /usr/local/include
          /usr/include
         End of search list.
-        [2/2] : && /usr/bin/clang  -v -Wl,-v CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -o cmTC_7a3bb   && :
+        [2/2] : && /usr/bin/clang  -v -Wl,-v CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -o cmTC_df9db   && :
         clang version 21.1.6
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -1162,7 +1162,7 @@ events:
         Candidate multilib: .;@m64
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
-         "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7a3bb /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crtn.o
+         "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_df9db /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crtn.o
         GNU ld (GNU Binutils) 2.45.1
         
       exitCode: 0
@@ -1196,10 +1196,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-kSMjaO']
+        ignore line: [Change Dir: '/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-dLrcn5']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_7a3bb]
-        ignore line: [[1/2] /usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_df9db]
+        ignore line: [[1/2] /usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang version 21.1.6]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -1214,7 +1214,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/bin/clang-21" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-kSMjaO -v -fcoverage-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-kSMjaO -resource-dir /usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/usr/bin/clang-21" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-dLrcn5 -v -fcoverage-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-dLrcn5 -resource-dir /usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 21.1.6 based upon LLVM 21.1.6 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -1224,7 +1224,7 @@ events:
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /usr/bin/clang  -v -Wl -v CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -o cmTC_7a3bb   && :]
+        ignore line: [[2/2] : && /usr/bin/clang  -v -Wl -v CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -o cmTC_df9db   && :]
         ignore line: [clang version 21.1.6]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -1238,7 +1238,7 @@ events:
         ignore line: [@m32]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7a3bb /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crtn.o]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_df9db /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [--hash-style=gnu] ==> ignore
           arg [--build-id] ==> ignore
@@ -1249,7 +1249,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_7a3bb] ==> ignore
+          arg [cmTC_df9db] ==> ignore
           arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o]
           arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o]
           arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -1260,7 +1260,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_7a3bb.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_df9db.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--as-needed] ==> ignore
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1309,8 +1309,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-wGb37M"
-      binary: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-wGb37M"
+      source: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-Lhqq0v"
+      binary: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-Lhqq0v"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: ""
@@ -1321,10 +1321,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-wGb37M'
+        Change Dir: '/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-Lhqq0v'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_98f23
-        [1/2] /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4cc8e
+        [1/2] /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang version 21.1.6
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -1336,7 +1336,7 @@ events:
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
          (in-process)
-         "/usr/bin/clang++" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-wGb37M -v -fcoverage-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-wGb37M -resource-dir /usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1 -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward -internal-isystem /usr/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/usr/bin/clang++" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-Lhqq0v -v -fcoverage-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-Lhqq0v -resource-dir /usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1 -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward -internal-isystem /usr/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 21.1.6 based upon LLVM 21.1.6 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -1349,7 +1349,7 @@ events:
          /usr/local/include
          /usr/include
         End of search list.
-        [2/2] : && /usr/bin/clang++  -v -Wl,-v CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_98f23   && :
+        [2/2] : && /usr/bin/clang++  -v -Wl,-v CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4cc8e   && :
         clang version 21.1.6
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -1360,7 +1360,7 @@ events:
         Candidate multilib: .;@m64
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
-         "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_98f23 /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crtn.o
+         "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4cc8e /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crtn.o
         GNU ld (GNU Binutils) 2.45.1
         
       exitCode: 0
@@ -1400,10 +1400,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-wGb37M']
+        ignore line: [Change Dir: '/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-Lhqq0v']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_98f23]
-        ignore line: [[1/2] /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_4cc8e]
+        ignore line: [[1/2] /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang version 21.1.6]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -1418,7 +1418,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/bin/clang++" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-wGb37M -v -fcoverage-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-wGb37M -resource-dir /usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1 -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward -internal-isystem /usr/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/usr/bin/clang++" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-Lhqq0v -v -fcoverage-compilation-dir=/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-Lhqq0v -resource-dir /usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1 -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward -internal-isystem /usr/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 21.1.6 based upon LLVM 21.1.6 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -1431,7 +1431,7 @@ events:
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /usr/bin/clang++  -v -Wl -v CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_98f23   && :]
+        ignore line: [[2/2] : && /usr/bin/clang++  -v -Wl -v CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4cc8e   && :]
         ignore line: [clang version 21.1.6]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -1445,7 +1445,7 @@ events:
         ignore line: [@m32]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_98f23 /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crtn.o]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4cc8e /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [--hash-style=gnu] ==> ignore
           arg [--build-id] ==> ignore
@@ -1456,7 +1456,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_98f23] ==> ignore
+          arg [cmTC_4cc8e] ==> ignore
           arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/Scrt1.o]
           arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib64/crti.o]
           arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -1467,7 +1467,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_98f23.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_4cc8e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1984,7 +1984,52 @@ events:
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:811 (_pkg_find_libs)"
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
-      - "CMakeLists.txt:23 (pkg_check_modules)"
+      - "CMakeLists.txt:24 (pkg_check_modules)"
+    mode: "library"
+    variable: "pkgcfg_lib_FCCONFIG_fontconfig"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "fontconfig"
+    candidate_directories:
+      - "/usr/lib/"
+    found: "/usr/lib/libfontconfig.so"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:761 (find_library)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:811 (_pkg_find_libs)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
+      - "CMakeLists.txt:25 (pkg_check_modules)"
     mode: "library"
     variable: "pkgcfg_lib_FREETYPE_freetype"
     description: "Path to a library."
@@ -2022,10 +2067,6 @@ events:
         - "/opt"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "/usr/lib/X11"
-...
-
----
-events:
   -
     kind: "find-v1"
     backtrace:
@@ -2036,7 +2077,7 @@ events:
       - "/usr/share/cmake/Modules/FetchContent.cmake:2155:EVAL:2 (__FetchContent_doPopulation)"
       - "/usr/share/cmake/Modules/FetchContent.cmake:2155 (cmake_language)"
       - "/usr/share/cmake/Modules/FetchContent.cmake:2394 (__FetchContent_Populate)"
-      - "CMakeLists.txt:35 (FetchContent_MakeAvailable)"
+      - "CMakeLists.txt:43 (FetchContent_MakeAvailable)"
     mode: "program"
     variable: "GIT_EXECUTABLE"
     description: "Git command line client"
@@ -2101,7 +2142,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindFreetype.cmake:132 (find_path)"
-      - "build/_deps/msdfgen-src/CMakeLists.txt:140 (find_package)"
+      - "build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt:140 (find_package)"
     mode: "path"
     variable: "FREETYPE_INCLUDE_DIR_ft2build"
     description: "Path to a file."
@@ -2257,7 +2298,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindFreetype.cmake:142 (find_path)"
-      - "build/_deps/msdfgen-src/CMakeLists.txt:140 (find_package)"
+      - "build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt:140 (find_package)"
     mode: "path"
     variable: "FREETYPE_INCLUDE_DIR_freetype2"
     description: "Path to a file."
@@ -2414,7 +2455,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindFreetype.cmake:155 (find_library)"
-      - "build/_deps/msdfgen-src/CMakeLists.txt:140 (find_package)"
+      - "build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt:140 (find_package)"
     mode: "library"
     variable: "FREETYPE_LIBRARY_RELEASE"
     description: "Path to a library."
@@ -2515,7 +2556,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindFreetype.cmake:164 (find_library)"
-      - "build/_deps/msdfgen-src/CMakeLists.txt:140 (find_package)"
+      - "build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt:140 (find_package)"
     mode: "library"
     variable: "FREETYPE_LIBRARY_DEBUG"
     description: "Path to a library."
@@ -2708,97 +2749,11 @@ events:
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "/usr/lib/X11"
   -
-    kind: "find_package-v1"
-    backtrace:
-      - "build/_deps/msdfgen-src/CMakeLists.txt:143 (find_package)"
-    name: "tinyxml2"
-    configs:
-      -
-        filename: "tinyxml2Config.cmake"
-        kind: "cmake"
-      -
-        filename: "tinyxml2-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "tinyxml2"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "/home/abhay/project/wallengine/build/CMakeFiles/pkgRedirects/tinyxml2Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/abhay/project/wallengine/build/CMakeFiles/pkgRedirects/tinyxml2-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/tinyxml2Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/tinyxml2-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/tinyxml2Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/tinyxml2-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/cmake/tinyxml2/tinyxml2Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found:
-      path: "/usr/lib/cmake/tinyxml2/tinyxml2-config.cmake"
-      mode: "config"
-      version: "11.0.0"
-    search_context:
-      ENV{PATH}:
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/usr/local/sbin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-  -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindZLIB.cmake:165 (find_path)"
       - "/usr/share/cmake/Modules/FindPNG.cmake:105 (find_package)"
-      - "build/_deps/msdfgen-src/CMakeLists.txt:146 (find_package)"
+      - "build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt:146 (find_package)"
     mode: "path"
     variable: "ZLIB_INCLUDE_DIR"
     description: "Path to a file."
@@ -2900,7 +2855,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindZLIB.cmake:195 (find_library)"
       - "/usr/share/cmake/Modules/FindPNG.cmake:105 (find_package)"
-      - "build/_deps/msdfgen-src/CMakeLists.txt:146 (find_package)"
+      - "build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt:146 (find_package)"
     mode: "library"
     variable: "ZLIB_LIBRARY_RELEASE"
     description: "Path to a library."
@@ -3142,7 +3097,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindZLIB.cmake:196 (find_library)"
       - "/usr/share/cmake/Modules/FindPNG.cmake:105 (find_package)"
-      - "build/_deps/msdfgen-src/CMakeLists.txt:146 (find_package)"
+      - "build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt:146 (find_package)"
     mode: "library"
     variable: "ZLIB_LIBRARY_DEBUG"
     description: "Path to a library."
@@ -3592,7 +3547,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindPNG.cmake:115 (find_path)"
-      - "build/_deps/msdfgen-src/CMakeLists.txt:146 (find_package)"
+      - "build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt:146 (find_package)"
     mode: "path"
     variable: "PNG_PNG_INCLUDE_DIR"
     description: "Path to a file."
@@ -3843,7 +3798,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindPNG.cmake:139 (find_library)"
-      - "build/_deps/msdfgen-src/CMakeLists.txt:146 (find_package)"
+      - "build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt:146 (find_package)"
     mode: "library"
     variable: "PNG_LIBRARY_RELEASE"
     description: "Path to a library."
@@ -4074,7 +4029,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindPNG.cmake:140 (find_library)"
-      - "build/_deps/msdfgen-src/CMakeLists.txt:146 (find_package)"
+      - "build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt:146 (find_package)"
     mode: "library"
     variable: "PNG_LIBRARY_DEBUG"
     description: "Path to a library."
@@ -4453,12 +4408,12 @@ events:
       - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
       - "/usr/share/cmake/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
       - "/usr/share/cmake/Modules/FindThreads.cmake:226 (_threads_check_libc)"
-      - "build/_deps/msdfgen-src/CMakeLists.txt:183 (find_package)"
+      - "build/_deps/msdf-atlas-gen-src/CMakeLists.txt:90 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-DEeMJN"
-      binary: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-DEeMJN"
+      source: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-RLJBIj"
+      binary: "/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-RLJBIj"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps"
       CMAKE_C_FLAGS: ""
@@ -4468,187 +4423,11 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-DEeMJN'
+        Change Dir: '/home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-RLJBIj'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_880eb
-        [1/2] /usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_880eb.dir/src.c.o -MF CMakeFiles/cmTC_880eb.dir/src.c.o.d -o CMakeFiles/cmTC_880eb.dir/src.c.o -c /home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-DEeMJN/src.c
-        [2/2] : && /usr/bin/clang   CMakeFiles/cmTC_880eb.dir/src.c.o -o cmTC_880eb   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_8f938
+        [1/2] /usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_8f938.dir/src.c.o -MF CMakeFiles/cmTC_8f938.dir/src.c.o.d -o CMakeFiles/cmTC_8f938.dir/src.c.o -c /home/abhay/project/wallengine/build/CMakeFiles/CMakeScratch/TryCompile-RLJBIj/src.c
+        [2/2] : && /usr/bin/clang   CMakeFiles/cmTC_8f938.dir/src.c.o -o cmTC_8f938   && :
         
       exitCode: 0
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "build/_deps/msdfgen-src/CMakeLists.txt:186 (find_package)"
-    name: "unofficial-skia"
-    configs:
-      -
-        filename: "unofficial-skiaConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "unofficial-skia-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "unofficial-skia"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "/home/abhay/project/wallengine/build/CMakeFiles/pkgRedirects/unofficial-skiaConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/abhay/project/wallengine/build/CMakeFiles/pkgRedirects/unofficial-skia-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/unofficial-skiaConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/unofficial-skia-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/unofficial-skiaConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/unofficial-skia-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/unofficial-skiaConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/unofficial-skia-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/unofficial-skiaConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/unofficial-skia-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/unofficial-skiaConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/unofficial-skia-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/unofficial-skiaConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/unofficial-skia-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/unofficial-skiaConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/unofficial-skia-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/unofficial-skiaConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/unofficial-skia-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/usr/local/sbin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:761 (find_library)"
-      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:811 (_pkg_find_libs)"
-      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
-      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
-      - "CMakeLists.txt:24 (pkg_check_modules)"
-    mode: "library"
-    variable: "pkgcfg_lib_FCCONFIG_fontconfig"
-    description: "Path to a library."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "fontconfig"
-    candidate_directories:
-      - "/usr/lib/"
-    found: "/usr/lib/libfontconfig.so"
-    search_context:
-      ENV{PATH}:
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/usr/local/sbin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "/usr/lib/X11"
 ...

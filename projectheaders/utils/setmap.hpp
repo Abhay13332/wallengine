@@ -12,9 +12,11 @@ class fi_settings{
     std::unordered_map<std::string, std::any> data;
     fi_settings(std::unordered_map<std::string, std::any> data);
     void push(std::string setting,std::any value);
-    template<typename T>
-    T get(std::string);
-    bool contains(std::string);
+      template<typename T>
+    T get(std::string key){
+        return (std::any_cast<T>(data[key]));
+    };
+    bool contains(std::string key) ;
     
     
 };

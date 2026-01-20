@@ -359,4 +359,5 @@ CMakeFiles/wallengine.dir/src/texture.cpp.o.ddi: \
   /usr/include/KHR/khrplatform.h /usr/include/GLES3/gl32.h \
   /usr/include/GLES3/gl3platform.h \
   /home/abhay/project/wallengine/build/xdg-shell-client-protocol.h \
+  /home/abhay/project/wallengine/build/wlr-layer-shell-unstable-v1-client-protocol.h \
   /home/abhay/project/wallengine/externalheaders/stb/stb_image.h

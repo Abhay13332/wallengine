@@ -7,7 +7,7 @@ include(FetchContent)
 
 # Find dependencies
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(WLR REQUIRED wlroots-0.19)
+# pkg_check_modules(WLR REQUIRED wlroots-0.19)
 pkg_check_modules(WAYLAND_CLIENT REQUIRED wayland-client)
 pkg_check_modules(WAYLAND_EGL REQUIRED wayland-egl)
 pkg_check_modules(WAYLAND_SCANNER REQUIRED wayland-scanner)
@@ -63,21 +63,21 @@ function(generate_wayland_protocol protocol_file)
 endfunction()
 
 # Protocols to generate
-generate_wayland_protocol("${WAYLAND_PROTOCOLS_DIR}/stable/xdg-shell/xdg-shell.xml")
-generate_wayland_protocol("/home/abhay/tmptasks/wlroots/protocol/wlr-layer-shell-unstable-v1.xml")
+ generate_wayland_protocol("${WAYLAND_PROTOCOLS_DIR}/stable/xdg-shell/xdg-shell.xml")
+ generate_wayland_protocol("${CMAKE_SOURCE_DIR}/protocol/wlr-layer-shell-unstable-v1.xml")
 
 #include path
 set(STB_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/externalheaders/stb") 
 set(SRC_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/projectheaders")
 
 #include srcfiles
-set(SRC_FILES "src/texture.cpp" "src/stb.cpp" "src/waylandinterrupt.cpp"
+set(SRC_FILES  "src/stb.cpp" "src/waylandinterrupt.cpp"
         "src/wayland-xdg/fi_keyboard_handler.cpp" "src/wayland-xdg/eventqueue.cpp"
-         "src/glsl/font.cpp" 
-         "src/utils/setmap.cpp" )
+        "src/utils/setmap.cpp" 
+        "src/glsl/font.cpp" "src/glsl/texture.cpp"  )
 # Add your executable
 add_executable(wallengine main.cpp  ${PROTOCOL_SOURCES} ${PROTOCOL_HEADERS} ${SRC_FILES})
-
+ 
 #add module targets
 
 
@@ -92,7 +92,7 @@ target_include_directories(wallengine PRIVATE
     ${EGL_INCLUDE_DIRS}
     ${CMAKE_CURRENT_BINARY_DIR}
     ${STB_INCLUDE_DIR}
-    ${SRC_INCLUDE_DIR}
+     ${SRC_INCLUDE_DIR}
     ${XKBCOMMON_INCLUDE_DIRS}
     ${FREETYPE_INCLUDE_DIRS}
     ${FCCONFIG_INCLUDE_DIRS}
@@ -111,6 +111,7 @@ target_link_libraries(wallengine PRIVATE
     ${FREETYPE_LIBRARIES}
     ${MSDF_LIBRARIES}
     ${FCCONFIG_LIBRARIES}
+    
 )
 
 #cmake flags
@@ -124,4 +125,4 @@ set_target_properties(wallengine PROPERTIES
 )
 # We need -DWLR_USE_UNSTABLE for many wlroots features
 add_definitions(-DWLR_USE_UNSTABLE)
-
+target_compile_definitions(wallengine PRIVATE SOURCE_DIR="${CMAKE_SOURCE_DIR}/")

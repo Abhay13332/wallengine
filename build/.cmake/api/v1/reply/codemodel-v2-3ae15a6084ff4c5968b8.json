@@ -1,0 +1,246 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "Freetype::Freetype::@caa48cc13d340cc23d8e",
+					"jsonFile" : "target-Freetype__Freetype-Debug-587d90c05d0ae0bb9582.json",
+					"name" : "Freetype::Freetype",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Git::Git::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Git__Git-Debug-89b45402ce7bc1ce5d1b.json",
+					"name" : "Git::Git",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "PNG::PNG::@188238f1b6a84be10f7c",
+					"jsonFile" : "target-PNG__PNG-Debug-af4ea05ae3f1182b3e69.json",
+					"name" : "PNG::PNG",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "PNG::PNG::@caa48cc13d340cc23d8e",
+					"jsonFile" : "target-PNG__PNG-Debug-1b5851d95d8226984757.json",
+					"name" : "PNG::PNG",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Threads::Threads::@188238f1b6a84be10f7c",
+					"jsonFile" : "target-Threads__Threads-Debug-10a76115d0d833e50ffb.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ZLIB::ZLIB::@188238f1b6a84be10f7c",
+					"jsonFile" : "target-ZLIB__ZLIB-Debug-71003e0a33256e48dd77.json",
+					"name" : "ZLIB::ZLIB",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ZLIB::ZLIB::@caa48cc13d340cc23d8e",
+					"jsonFile" : "target-ZLIB__ZLIB-Debug-185194bac7ec55cd3985.json",
+					"name" : "ZLIB::ZLIB",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "msdfgen-full::@caa48cc13d340cc23d8e",
+					"jsonFile" : "target-msdfgen-full-Debug-87c23b39421c3939f370.json",
+					"name" : "msdfgen-full",
+					"projectIndex" : 2
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						1
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-9ad1a58d4644cf6543fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"build" : "_deps/msdf-atlas-gen-build",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-_deps.msdf-atlas-gen-build-Debug-08c9e246ea54734127da.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/_deps/msdf-atlas-gen-src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						3,
+						6,
+						7
+					],
+					"build" : "_deps/msdf-atlas-gen-build/msdfgen",
+					"jsonFile" : "directory-_deps.msdf-atlas-gen-build.msdfgen-Debug-b52fb0c17a37cac52406.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "build/_deps/msdf-atlas-gen-src/msdfgen",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						1
+					],
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "wallengine",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "msdf-atlas-gen",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						3,
+						6,
+						7
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "msdfgen",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "msdf-atlas-gen::@188238f1b6a84be10f7c",
+					"jsonFile" : "target-msdf-atlas-gen-Debug-4aea1ff80fbc8a0f5f91.json",
+					"name" : "msdf-atlas-gen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "msdfgen-core::@caa48cc13d340cc23d8e",
+					"jsonFile" : "target-msdfgen-core-Debug-b2d37dfe8618f61b20ad.json",
+					"name" : "msdfgen-core",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "msdfgen-ext::@caa48cc13d340cc23d8e",
+					"jsonFile" : "target-msdfgen-ext-Debug-f7034c02f16f23158882.json",
+					"name" : "msdfgen-ext",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wallengine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wallengine-Debug-f0526b3f3e8e53d9d1bd.json",
+					"name" : "wallengine",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/abhay/project/wallengine/build",
+		"source" : "/home/abhay/project/wallengine"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}

@@ -1,0 +1,292 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "_deps/msdf-atlas-gen-build/msdfgen/libmsdfgen-ext.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"build/_deps/msdf-atlas-gen-src/msdfgen/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 149,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 169,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 162,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 158,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 201,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 161,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 170,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "PNG::PNG::@caa48cc13d340cc23d8e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Freetype::Freetype::@caa48cc13d340cc23d8e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "msdfgen-core::@caa48cc13d340cc23d8e"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "MSDFGEN_COPYRIGHT_YEAR=2026"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "MSDFGEN_DISABLE_SVG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "MSDFGEN_EXT_PUBLIC="
+				},
+				{
+					"backtrace" : 2,
+					"define" : "MSDFGEN_PUBLIC="
+				},
+				{
+					"backtrace" : 2,
+					"define" : "MSDFGEN_USE_CPP11"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "MSDFGEN_USE_LIBPNG"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "MSDFGEN_VERSION=1.13.0"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "MSDFGEN_VERSION_MAJOR=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "MSDFGEN_VERSION_MINOR=13"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "MSDFGEN_VERSION_REVISION=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/freetype2"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				5,
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "msdfgen-core::@caa48cc13d340cc23d8e"
+		}
+	],
+	"id" : "msdfgen-ext::@caa48cc13d340cc23d8e",
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "PNG::PNG::@caa48cc13d340cc23d8e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Freetype::Freetype::@caa48cc13d340cc23d8e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "msdfgen-core::@caa48cc13d340cc23d8e"
+		}
+	],
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "PNG::PNG::@caa48cc13d340cc23d8e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Freetype::Freetype::@caa48cc13d340cc23d8e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "msdfgen-core::@caa48cc13d340cc23d8e"
+		}
+	],
+	"name" : "msdfgen-ext",
+	"nameOnDisk" : "libmsdfgen-ext.a",
+	"paths" : 
+	{
+		"build" : "_deps/msdf-atlas-gen-build/msdfgen",
+		"source" : "build/_deps/msdf-atlas-gen-src/msdfgen"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				5,
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/msdf-atlas-gen-src/msdfgen/msdfgen-ext.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-font.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-svg.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/msdf-atlas-gen-src/msdfgen/ext/resolve-shape-geometry.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/msdf-atlas-gen-src/msdfgen/ext/save-png.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-font.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-svg.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/msdf-atlas-gen-src/msdfgen/ext/resolve-shape-geometry.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/msdf-atlas-gen-src/msdfgen/ext/save-png.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

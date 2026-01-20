@@ -119,4 +119,5 @@ CMakeFiles/wallengine.dir/src/stb.cpp.o.ddi: \
   /usr/lib/clang/21/include/emmintrin.h \
   /usr/lib/clang/21/include/xmmintrin.h \
   /usr/lib/clang/21/include/mmintrin.h \
-  /usr/lib/clang/21/include/mm_malloc.h
+  /usr/lib/clang/21/include/mm_malloc.h \
+  /home/abhay/project/wallengine/externalheaders/stb/stb_image_write.h

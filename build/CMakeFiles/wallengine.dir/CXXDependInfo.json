@@ -40,15 +40,15 @@
 			"language" : "CXX",
 			"source" : "/home/abhay/project/wallengine/src/glsl/font.cpp"
 		},
+		"CMakeFiles/wallengine.dir/src/glsl/texture.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/abhay/project/wallengine/src/glsl/texture.cpp"
+		},
 		"CMakeFiles/wallengine.dir/src/stb.cpp.o" : 
 		{
 			"language" : "CXX",
 			"source" : "/home/abhay/project/wallengine/src/stb.cpp"
-		},
-		"CMakeFiles/wallengine.dir/src/texture.cpp.o" : 
-		{
-			"language" : "CXX",
-			"source" : "/home/abhay/project/wallengine/src/texture.cpp"
 		},
 		"CMakeFiles/wallengine.dir/src/utils/setmap.cpp.o" : 
 		{

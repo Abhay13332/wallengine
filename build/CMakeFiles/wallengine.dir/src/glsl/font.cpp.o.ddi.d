@@ -1,7 +1,8 @@
 CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /home/abhay/project/wallengine/src/glsl/font.cpp \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-font.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/../core/Shape.h \
+  /home/abhay/project/wallengine/projectheaders/glsl/font.hpp \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-coloring.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Shape.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/vector \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/requires_hosted.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -78,10 +79,10 @@ CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/uses_allocator_args.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/tuple \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/formatfwd.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/../core/Contour.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/../core/EdgeHolder.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/../core/edge-segments.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/../core/Vector2.hpp \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Contour.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/EdgeHolder.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-segments.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Vector2.hpp \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cmath \
   /usr/include/math.h /usr/include/bits/libc-header-start.h \
   /usr/include/bits/types.h /usr/include/bits/typesizes.h \
@@ -127,15 +128,75 @@ CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/tr1/poly_hermite.tcc \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/tr1/poly_laguerre.tcc \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/tr1/riemann_zeta.tcc \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/../core/base.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/../core/SignedDistance.hpp \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/base.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/SignedDistance.hpp \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cfloat \
   /usr/lib/clang/21/include/float.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/../core/EdgeColor.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/../core/YAxisOrientation.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/../core/Scanline.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Charset.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/EdgeColor.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/YAxisOrientation.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Scanline.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/import-font.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/BitmapAtlasStorage.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/AtlasStorage.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/msdfgen.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/arithmetics.hpp \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Range.hpp \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Projection.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/DistanceMapping.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/SDFTransformation.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/BitmapRef.hpp \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Bitmap.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Bitmap.hpp \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cstdlib \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cstring \
+  /usr/include/string.h /usr/include/strings.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/bitmap-interpolation.hpp \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/pixel-conversion.hpp \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/generator-config.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/msdf-error-correction.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/render-sdf.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/rasterization.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/sdf-error-estimation.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-bmp.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-tiff.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-rgba.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-fl32.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/shape-description.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cstdio \
+  /usr/include/stdio.h /usr/lib/clang/21/include/stdarg.h \
+  /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/stdio_lim.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/export-svg.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Remap.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/BitmapAtlasStorage.hpp \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/algorithm \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_algo.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/algorithmfwd.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_heap.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/uniform_int_dist.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_tempbuf.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/ranges_algo.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/optional \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/exception \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/exception_ptr.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/cxxabi_init_exception.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/typeinfo \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/nested_exception.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/enable_special_members.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/pstl/glue_algorithm_defs.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/pstl/execution_defs.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/bitmap-blit.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/types.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cstdint \
+  /usr/lib/clang/21/include/stdint.h /usr/include/stdint.h \
+  /usr/include/bits/wchar.h /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdint-least.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Charset.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/set \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_tree.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/ext/aligned_buffer.h \
@@ -143,11 +204,6 @@ CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_set.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_multiset.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/erase_if.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/types.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cstdint \
-  /usr/lib/clang/21/include/stdint.h /usr/include/stdint.h \
-  /usr/include/bits/wchar.h /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdint-least.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/FontGeometry.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/utility \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_relops.h \
@@ -157,11 +213,8 @@ CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/char_traits.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/postypes.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cwchar \
-  /usr/include/wchar.h /usr/lib/clang/21/include/stdarg.h \
-  /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h \
-  /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/FILE.h \
+  /usr/include/wchar.h /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/types/mbstate_t.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/localefwd.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/clocale \
@@ -183,41 +236,10 @@ CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/ext/string_conversions.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cstdio \
-  /usr/include/stdio.h /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/stdio_lim.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/basic_string.tcc \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/map \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_map.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_multimap.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/msdfgen.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/arithmetics.hpp \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Range.hpp \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Projection.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/DistanceMapping.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/SDFTransformation.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/BitmapRef.hpp \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Bitmap.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/Bitmap.hpp \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cstring \
-  /usr/include/string.h /usr/include/strings.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/bitmap-interpolation.hpp \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/pixel-conversion.hpp \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/edge-coloring.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/generator-config.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/msdf-error-correction.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/render-sdf.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/rasterization.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/sdf-error-estimation.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-bmp.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-tiff.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-rgba.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/save-fl32.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/shape-description.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/core/export-svg.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/msdfgen-ext.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/resolve-shape-geometry.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdfgen/ext/save-png.h \
@@ -226,7 +248,22 @@ CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Rectangle.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Padding.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/GlyphBox.h \
-  /usr/include/fontconfig/fontconfig.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/ImmediateAtlasGenerator.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Workload.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/functional \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/std_function.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/unordered_map \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/unordered_map.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/hashtable.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/hashtable_policy.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/array \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/move_only_function.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/mofunc_impl.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/AtlasGenerator.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/ImmediateAtlasGenerator.hpp \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/glyph-generators.h \
+  /usr/include/GL/gl.h /usr/include/GL/glext.h \
+  /usr/include/KHR/khrplatform.h /usr/include/fontconfig/fontconfig.h \
   /usr/lib/clang/21/include/limits.h /usr/include/limits.h \
   /usr/include/bits/posix1_lim.h /usr/include/bits/local_lim.h \
   /usr/include/linux/limits.h \
@@ -272,11 +309,6 @@ CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/ostream \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/ostream.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/ios \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/exception \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/exception_ptr.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/cxxabi_init_exception.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/typeinfo \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/nested_exception.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/ios_base.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/ext/atomicity.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
@@ -293,12 +325,6 @@ CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/locale_classes.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/text_encoding \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/unicode.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/array \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_algo.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/algorithmfwd.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_heap.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/uniform_int_dist.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/stl_tempbuf.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/unicode-data.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/text_encoding-data.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/locale_classes.tcc \
@@ -325,8 +351,6 @@ CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/codecvt.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/locale_facets_nonio.tcc \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/locale_conv.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/optional \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/enable_special_members.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/span \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/ostream.tcc \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/istream \
@@ -389,7 +413,6 @@ CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/ranges_uninitialized.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/out_ptr.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/pstl/glue_memory_defs.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/pstl/execution_defs.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/csignal \
   /usr/include/signal.h /usr/include/bits/signum-generic.h \
   /usr/include/bits/signum-arch.h /usr/include/bits/types/sig_atomic_t.h \
@@ -420,46 +443,30 @@ CMakeFiles/wallengine.dir/src/glsl/font.cpp.o.ddi: \
   /usr/include/wayland-version.h /usr/include/wayland-client-protocol.h \
   /usr/include/wayland-egl.h /usr/include/wayland-egl-core.h \
   /usr/include/EGL/egl.h /usr/include/EGL/eglplatform.h \
-  /usr/include/KHR/khrplatform.h /usr/include/GLES3/gl32.h \
-  /usr/include/GLES3/gl3platform.h \
+  /usr/include/GLES3/gl32.h /usr/include/GLES3/gl3platform.h \
   /home/abhay/project/wallengine/build/xdg-shell-client-protocol.h \
+  /home/abhay/project/wallengine/projectheaders/utils/helpermacros.hpp \
+  /home/abhay/project/wallengine/build/wlr-layer-shell-unstable-v1-client-protocol.h \
   /home/abhay/project/wallengine/externalheaders/stb/stb_image.h \
+  /home/abhay/project/wallengine/externalheaders/stb/stb_image_write.h \
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/TightAtlasPacker.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/msdf-atlas-gen.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/utf8.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/RectanglePacker.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/rectangle-packing.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/rectangle-packing.hpp \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Workload.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/functional \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/std_function.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/unordered_map \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/unordered_map.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/hashtable.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/hashtable_policy.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/move_only_function.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/mofunc_impl.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/size-selectors.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/bitmap-blit.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/AtlasStorage.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/Remap.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/BitmapAtlasStorage.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/BitmapAtlasStorage.hpp \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/algorithm \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/ranges_algo.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/pstl/glue_algorithm_defs.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/TightAtlasPacker.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/GridAtlasPacker.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/AtlasGenerator.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/ImmediateAtlasGenerator.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/ImmediateAtlasGenerator.hpp \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/DynamicAtlas.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/DynamicAtlas.hpp \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/utils.hpp \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/glyph-generators.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/image-encode.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/image-save.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/image-save.hpp \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/artery-font-export.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/csv-export.h \
   /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/json-export.h \
-  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/shadron-preview-generator.h
+  /home/abhay/project/wallengine/build/_deps/msdf-atlas-gen-src/msdf-atlas-gen/shadron-preview-generator.h \
+  /home/abhay/project/wallengine/projectheaders/utils/setmap.hpp \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/any \
+  /home/abhay/project/wallengine/projectheaders/glsl/texture.hpp

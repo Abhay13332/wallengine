@@ -410,4 +410,3 @@ CheckOptions:
   readability-uppercase-literal-suffix.NewSuffixes: ''
   readability-use-std-min-max.IncludeStyle: llvm
 SystemHeaders:   false
-...

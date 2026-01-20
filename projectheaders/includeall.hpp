@@ -21,12 +21,14 @@
 #include <wayland-egl.h> // The bridge between Wayland and EGL
 #include <EGL/egl.h>
 #include <GLES3/gl32.h> 
-#include "xdg-shell-client-protocol.h"
-
+#include <GL/gl.h>
+#include <xdg-shell-client-protocol.h>
+#include <utils/helpermacros.hpp>
 #define namespace protocol_namespace
-#include "wlr-layer-shell-unstable-v1-client-protocol.h"
+#include <wlr-layer-shell-unstable-v1-client-protocol.h>
 #undef namespace
 #include "stb_image.h"
+#include <stb_image_write.h>
 
 #endif
 
