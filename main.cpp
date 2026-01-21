@@ -18,6 +18,7 @@ using namespace std;
  
 void err(const string& str){
 cout << "err:"<<str;
+
 exit(EXIT_SUCCESS);
 }
 string readfile(const string &path){
@@ -271,8 +272,6 @@ int main() {
     }
 
     
- 
-
     eglDestroyContext(edpy, ctx);
     eglDestroySurface(edpy, surf);
     eglTerminate(edpy);

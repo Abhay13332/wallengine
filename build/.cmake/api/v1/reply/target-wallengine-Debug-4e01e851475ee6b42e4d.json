@@ -427,15 +427,15 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "msdf-atlas-gen::@188238f1b6a84be10f7c"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "msdfgen-core::@caa48cc13d340cc23d8e"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "msdfgen-ext::@caa48cc13d340cc23d8e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "msdf-atlas-gen::@188238f1b6a84be10f7c"
 		}
 	],
 	"id" : "wallengine::@6890427a1f51a3e7e1df",
