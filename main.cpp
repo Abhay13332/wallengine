@@ -1,6 +1,4 @@
-
 #include "wayland-xdg/eventqueue.hpp"
-#include <chrono>
 #include <filesystem>
 #include <glsl/texture.hpp>
 #include <wayland-xdg/fi_keyboard_handler.hpp>
@@ -12,9 +10,6 @@
 #include <wayland-xdg/fi_pointer_handler.hpp>
 #include "glsl/font.hpp"
 using namespace std;
- 
-// stb include dd
-
  
 void err(const string& str){
 cout << "err:"<<str;
@@ -46,7 +41,8 @@ GLuint createShader(GLenum type,const char* src){
         std::cerr << "GLSL Error: " << buf.data() << "\n";
         err("shaderissue");
     }
-   
+ 
+    
     return sid;
 }
 GLuint attachshaderandgetprogram(){
@@ -116,6 +112,7 @@ static void seat_handle_cap(void *data, struct wl_seat *curr_seat, uint32_t caps
 void set_seat_name(void *data, wl_seat *curr_seat, const char *name){
  auto *curr_seat_info=static_cast<seatData*>(data);
  curr_seat_info->name=string(name);
+
  
 }
 static const struct  wl_seat_listener seat_listener ={
@@ -142,6 +139,11 @@ static const struct wl_registry_listener reg_list = {
     .global = on_global
 };
 
+static const struct xdg_toplevel_listener xdg_list{
+.configure=[](void * data, struct xdg_toplevel * , int32_t, int32_t, struct wl_array *){
+
+}
+};
 static void on_ping(void* data, struct xdg_wm_base* wm_base, uint32_t ser) { xdg_wm_base_pong(wm_base, ser); }
 static const struct xdg_wm_base_listener shell_list = { .ping = on_ping };
 

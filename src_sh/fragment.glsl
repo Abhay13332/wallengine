@@ -23,7 +23,7 @@ void main(){
 
     vec3 msdf_sample = texture(txt1, varytexpos).rgb;
     float distance = median(msdf_sample.r, msdf_sample.g, msdf_sample.b);
-    float screenPxDistance = 160.0 * (distance - 0.5);
+    float screenPxDistance = 4.0 * (distance - 0.5);
     float coverage = clamp(screenPxDistance + 0.5, 0.0, 1.0);
     FragColor = vec4(vec3(coverage), 1.0);
     //    FragColor=texture(txt1,varytexpos);

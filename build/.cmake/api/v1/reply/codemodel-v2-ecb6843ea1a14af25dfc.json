@@ -204,7 +204,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "msdf-atlas-gen::@188238f1b6a84be10f7c",
-					"jsonFile" : "target-msdf-atlas-gen-Debug-4aea1ff80fbc8a0f5f91.json",
+					"jsonFile" : "target-msdf-atlas-gen-Debug-382d48dec88f259e8183.json",
 					"name" : "msdf-atlas-gen",
 					"projectIndex" : 1
 				},
@@ -225,7 +225,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "wallengine::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-wallengine-Debug-4e01e851475ee6b42e4d.json",
+					"jsonFile" : "target-wallengine-Debug-c62199055bde32a7b9ce.json",
 					"name" : "wallengine",
 					"projectIndex" : 0
 				}

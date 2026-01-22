@@ -427,11 +427,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "msdfgen-core::@caa48cc13d340cc23d8e"
+			"id" : "msdfgen-ext::@caa48cc13d340cc23d8e"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "msdfgen-ext::@caa48cc13d340cc23d8e"
+			"id" : "msdfgen-core::@caa48cc13d340cc23d8e"
 		},
 		{
 			"backtrace" : 2,
